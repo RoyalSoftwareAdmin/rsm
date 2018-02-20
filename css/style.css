@@ -1772,7 +1772,7 @@ form.search-form {
 .forgot a:hover{
     color: #f2b33f;
 }
-.login-page input[type="submit"] {
+.login-page input[type="button"] {
     border: none;
     outline: none;
     cursor: pointer;
@@ -1789,7 +1789,7 @@ form.search-form {
 	-ms-transition: 0.5s all;
 	-o-transition: 0.5s all;
 }
-.login-page input[type="submit"]:hover{
+.login-page input[type="button"]:hover{
     background: #337ab7;
 }
 .login-page-bottom {
@@ -2115,7 +2115,7 @@ p.creating {
 .sub-login-right p a:hover{
 	color:#fff;
 }
-.sub_home  input[type="submit"] {
+.sub_home  input[type="button"] {
     border: none;
     outline: none;
     cursor: pointer;
@@ -2133,7 +2133,7 @@ p.creating {
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 }
-.sub_home input[type="submit"]:hover {
+.sub_home input[type="button"]:hover {
     background-color: #337ab7;
 }
 .signup-page .radios {
@@ -2518,7 +2518,7 @@ li.head i.fa {
 	padding: 2em 0;
 	border-bottom: 1px solid #C7C5C5;
 }
-.mail-body input[type="submit"] {
+.mail-body input[type="button"] {
     border: none;
     background: none;
     font-size: 1em;
@@ -2648,7 +2648,7 @@ li.head i.fa {
     font-size: 0.9em;
     color: #6F6F6F;
 }
-.compose-right input[type="submit"] {
+.compose-right input[type="button"] {
     font-size: 0.9em;
     background-color: #255a87;
     border: 1px solid #255a87;
@@ -6124,7 +6124,7 @@ i.icon_13{
     width: 70%;
     background: #fff;
 }
-.activity_box input[type="submit"]{
+.activity_box input[type="button"]{
 	outline: none;
     width: 20%;
     font-size: 1em;
@@ -6139,7 +6139,7 @@ i.icon_13{
 	-ms-transition: 0.5s all;
 	-o-transition: 0.5s all;
 }
-.activity_box input[type="submit"]:hover{
+.activity_box input[type="button"]:hover{
 	background: #F2B33F;
 }
 .activity-desc-sub1:after{
@@ -7288,7 +7288,7 @@ h4.asd label {
 	.login-body {
 		padding: 3em 2em;
 	}
-	.login-page input[type="submit"],.sub_home input[type="submit"] {
+	.login-page input[type="button"],.sub_home input[type="button"] {
 		padding: .5em 1em;
 	}
 	.compose-left,.compose-right {
@@ -7706,7 +7706,7 @@ h4.asd label {
 	.mail-body input[type="text"]:focus {
 		padding: 1em 0;
 	}
-	.mail-body input[type="submit"] {
+	.mail-body input[type="button"] {
 		font-size: 0.9em;
 		margin-top: 0.2em;
 	}
@@ -7794,7 +7794,7 @@ h4.asd label {
 		margin: 0em 2em 0 0;
 		font-size: .9em;
 	}
-	.sub_home input[type="submit"] {
+	.sub_home input[type="button"] {
 		margin: 0.5em 0 0 6.6em;
 		width: 28%;
 		font-size: 0.9em;
@@ -8326,7 +8326,7 @@ h4.asd label {
 	.control2 {
 		height: 150px;
 	}
-	.compose-right input[type="submit"] {
+	.compose-right input[type="button"] {
 		margin-top: 0.5em;
 	}
 	.tables .panel-body, .tables .bs-example {
@@ -8378,7 +8378,7 @@ h4.asd label {
 	.forgot a {
 		font-size: 0.9em;
 	}
-	.login-page input[type="submit"] {
+	.login-page input[type="button"] {
 		font-size: 0.9em;
 	}
 	.login-page-bottom h5 {
@@ -8409,7 +8409,7 @@ h4.asd label {
 	.blank-page {
 		padding: 1em;
 	}
-	.sub_home input[type="submit"] {
+	.sub_home input[type="button"] {
 		margin: 0.5em 0 0 0;
 		width: 34%;
 		font-size: 0.8em;

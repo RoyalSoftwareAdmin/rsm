@@ -30,6 +30,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/metisMenu.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script type="text/javascript" src="js/common/common.js"></script>
 	<link href="css/custom.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/modules/signup.css">
 
@@ -42,16 +43,17 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 					<h2 class="title1">Login</h2>
 					<div class="widget-shadow">
 						<div class="login-body">
-							<input type="email" class="user" name="email" placeholder="Enter Your Email" >
-							<input type="password" name="password" class="lock" placeholder="Password" >
+							<input type="email" class="user" id="email" name="email" placeholder="Enter Your Email" >
+							<input type="password" name="password" id="password" class="lock" placeholder="Password" >
 							<div class="forgot-grid">
 								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Remember me</label>
 								<div class="forgot">
 									<a href="#">forgot password?</a>
-								</div>
+								</div>								
 								<div class="clearfix"> </div>
 							</div>
-							<input type="submit" name="Sign In" value="Sign In">
+							<div class="sign-u error"></div>
+							<input type="button" id="submit" name="Sign In" value="Sign In">
 							<div class="registration">
 								Don't have an account ?
 								<a class="" href="signup.html">
@@ -70,5 +72,6 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 		    <!--//footer-->
 		</div>
 	   <script src="js/bootstrap.js"> </script>
+	   <script type="text/javascript" src="js/modules/login.js"></script>
 	</body>
 </html>
