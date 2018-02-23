@@ -20,13 +20,13 @@ $("#submit").on("click", function(){
 	}else{
 		$.ajax({
 			url : "http://royalsoftwaresolution.com/RoyalBackend/data.php",
-			data : {"layout" : 1001, "username" : email , "password" : password},
+			data : {"layout" : 1001, "username" : email , "password" : password}, // Ajax code for getting login data from backend. 
 			method : "POST",
 			success: function( result){
-				console.log(result);
+				console.log(result); // This gives JSON data on successful login
 			},
 			error : function(error) {
-				console.log(error.responseText);
+				console.log(error.responseText); // Error data for failed to reach url or error in backend. 
 			}
 		})
 	}
