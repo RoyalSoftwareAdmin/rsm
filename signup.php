@@ -93,7 +93,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			</div>
 			<!--footer-->
 			<div class="footer">
-			   <p>&copy; 2018 Royal Softwares. All Rights Reserved | Design by <a href="http://www.royalsoftwaresolution.com/" target="_blank">Royal Softwares </a></p>
+			   <?php include("header.php"); ?>
 			</div>
 	        <!--//footer-->
 		</div>

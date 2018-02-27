@@ -4,7 +4,6 @@ $("#submit").on("click", function(){
 	$(".error").html("");
 	var email = $("#email").val(),
 		password = $("#password").val(),
-		
 		flag = true;
 	if(email === "" || !ismail(email)){
 		error = "Enter correct Mail Eg: mail@royalsoftwaresolution.com";
@@ -20,14 +19,29 @@ $("#submit").on("click", function(){
 	}else{
 		$.ajax({
 			url : "http://royalsoftwaresolution.com/RoyalBackend/data.php",
-			data : {"layout" : 1001, "username" : email , "password" : password}, // Ajax code for getting login data from backend. 
+			data : {"layout" : 1001, "username" : email , "password" : password},
 			method : "POST",
 			success: function( result){
-				console.log(result); // This gives JSON data on successful login
+				console.log(result);
+				if(result.Status != 0){
+					_session = result;
+					localStorage.setItem("session", JSON.stringify(_session));
+					window.location = "index.html";
+				}
+				else{
+					$("#errModal").show();
+					window.clear();
+				}
 			},
 			error : function(error) {
-				console.log(error.responseText); // Error data for failed to reach url or error in backend. 
+				console.log(error.responseText);
 			}
 		})
 	}
+})
+
+$(document).ready(function(){
+	$(".closeModal").on("click", function(){
+		$("#errModal").hide(); 
+	})
 })

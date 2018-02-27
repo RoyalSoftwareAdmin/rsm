@@ -26,7 +26,12 @@ $("#submit").on("click", function(){
 			flag = false;
 		}
 		else if(repassword !== "" ){
-			(password !== repassword) ? error = "Password mismatch" : error = "";					
+			if(password !== repassword) {
+				error = "Password mismatch" ;
+				flag = false;
+			}else{
+				error = "";					
+			}
 		}else{
 			error = "Enter Re-Password";
 			flag = false;

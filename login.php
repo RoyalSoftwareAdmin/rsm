@@ -53,7 +53,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 							<input type="button" id="submit" name="Sign In" value="Sign In">
 							<div class="registration">
 								Don't have an account ?
-								<a class="" href="signup.html">
+								<a class="" href="signup.php">
 									Create an account
 								</a>
 							</div>
@@ -68,9 +68,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			<!-- Modal -->
            
 			<!--footer-->
-			<div class="footer">
-			   <p>&copy; 2018 Royal Softwares. All Rights Reserved | Design by <a href="http://www.royalsoftwaresolution.com/" target="_blank">Royal Softwares </a></p>		
-			</div>
+			
 		    <!--//footer-->
 		  </div>
 	    <div class="modal fade in" id="errModal"  aria-hidden="true">
@@ -108,6 +106,6 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			})
 	   </script>
 
-	   
+	   <?php include("footer.php"); ?>
 	</body>
 </html>

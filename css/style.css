@@ -1,5 +1,5 @@
 /*
-Author: W3layout
+Author: Madhusudhana R K
 Author URL: http://www.royalsoftwaresolution.com
 
 License: Licence owned by Royal Softwares
@@ -6440,7 +6440,7 @@ h4.asd label {
 		font-size: 0.9em;
 	}
 	.header-left {
-		margin-left: 18%;
+		margin-left: 17%;
 	}
 	.r3_counter_box .fa {
 		font-size: 23px;
@@ -7321,11 +7321,11 @@ h4.asd label {
 }
 @media(max-width:667px){
 	.header-left {
-		width: 36%;
+		width: 30%;
 	}
 	.header-right {
 		float: right;
-		width: 62%;
+		width: 68%;
 	}
 	.mail.mail-name {
 		width: 11%;
@@ -8469,5 +8469,22 @@ h4.asd label {
 }
 /*--//responsive-design---*/
 
-
-
+.thief{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color:#FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+}
+.thiefMsg {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    color: #F00;
+}
