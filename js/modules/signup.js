@@ -39,17 +39,30 @@ $("#submit").on("click", function(){
 
 		if(!flag){
 			$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "10px 0px"});
-		}else{
+           }else{
 			$.ajax({
 				url : "http://royalsoftwaresolution.com/RoyalBackend/data.php",
 				data : {"layout" : 1000, "fname" :name ,"lname":lname, "email": email, "password" : password , "gender" : gender},
 				method : "POST",
 				success: function( result){
-					console.log(result);
+			     console.log(result);
+				 if(result.Status == 1){
+					 Window.location = "index.html";
+				 }	 
+					 else{
+						document.location.href = "payment.php"; 
+						 }
 				},
 				error : function(error) {
 					console.log(error.responseText);
+					$("#modalerror").show();
 				}
+				
+				
 			})
-		}
+			
+			
+			}
 })
+			
+

@@ -130,6 +130,9 @@ input.user {
     border: none;
     margin: 5px 0 10px 0;
 }
+
+
+
 input.mail {
     width: 83%;
     padding: 5px 10px 5px 35px;
@@ -554,6 +557,7 @@ form {
     .tabs-menu ul li a {
         padding: 12px 5px;
     }
+	
 
 }
 
@@ -603,6 +607,7 @@ form {
     font-size: 27px;
     margin: 40px 0;
 }
+
 .container {
     width: 95%;
 }
@@ -650,6 +655,56 @@ form {
 
 }
 
+.btn{
+	margin-left:15px;
+	padding:10px;
+	margin:10px;
+	width:50%;
+}
+.btn1{
+	width:50%;
+	padding:10px;
+}
 
+ select{
+	 padding:10px;
+    width: 100%;
+    padding: 5px 10px 5px 35px;
+    font-family: Oswald-Light;
+    font-size: 15px;
+    color: #927587;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    margin: 5px 0 10px 0;
+}
+.in{
+	margin-left:5px;
+}
+.act{
+	background-color:green;
+   color:white;
+	
+	text-align:center;
 
+	
+
+}
+.inact{
+	background-color:red;
+    color:white;
+	
+	
+}
+#userStatus h2{
+	text-align:center;
+	float:right;
+	margin-left:10px;
+}
+@media(min-width: 320px)and(max-width: 712px) {
+	p{
+	margin-top:20px;
+}
+}
 /*--- Responsinator Code ---*/

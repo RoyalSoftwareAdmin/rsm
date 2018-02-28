@@ -1,9 +1,19 @@
 <!--
 Author: Madhusudhana R K
 Author URL: http://www.royalsoftwaresolution.com
+
 License: Licence owned by Royal Softwares
+
 License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
+
 -->
+<?php 
+	session_start();
+	if(!isset($_SESSION['login_user'])){
+		header("Location: login.php");
+	}
+	
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -19,7 +29,6 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 	  <meta property="og:image"         content="http://www.royalsoftwaresolution.com/wp-content/uploads/2018/01/mysexpo-12.png" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-	<!-- Bootstrap Core CSS -->
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 	<link href="css/font-awesome.css" rel="stylesheet"> 
@@ -53,59 +62,22 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 							<input type="button" id="submit" name="Sign In" value="Sign In">
 							<div class="registration">
 								Don't have an account ?
-								<a class="" href="signup.php">
+								<a class="" href="signup.html">
 									Create an account
 								</a>
 							</div>
 						</div>
-
 					</div>
 					
-			
 				</div>
 			</div>
-			
-			<!-- Modal -->
-           
 			<!--footer-->
-			
-		    <!--//footer-->
-		  </div>
-	    <div class="modal fade in" id="errModal"  aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                
-				<div class="modal-content">
-                  
-				  <div class="modal-header">
-                  <h2 class="modal-title" style="color: black" id="ModalTitle">Add Details</h2>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-                  </div>
-             
-			          <div class="modal-body">
-                       
-                      <div> Display Nothing</div>
-                      </div>
-      
-	                    <div class="modal-footer">
-                        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>-->
-						<button type="button" class="btn btn-default closeModal" data-dismiss="modal" >Close</button>
-                        </div>
-           
-		        </div>
-                
+			<div class="footer">
+			   <p>&copy; 2018 Royal Softwares. All Rights Reserved | Design by <a href="http://www.royalsoftwaresolution.com/" target="_blank">Royal Softwares </a></p>		
 			</div>
-                 
+		    <!--//footer-->
 		</div>
 	   <script src="js/bootstrap.js"> </script>
-	   <script type="text/javascript" src="js/modules/login.js">
-	     $("#submit").on("click", function(){
-				validate();
-			})
-	   </script>
-
-	   <?php include("footer.php"); ?>
+	   <script type="text/javascript" src="js/modules/login.js"></script>
 	</body>
 </html>
