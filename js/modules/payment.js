@@ -9,11 +9,11 @@ $(".error").html("");
 	cvc = $("#cvv").val(),
     ee
 	flag = true;
-   if(name === "" || !isalpha(name)){
-    error = "Enter name Eg: subodh NM";
+   if(name === "" || !isname(name)){
+    error = "Enter name (Only Alphabets) Eg: Royal Software";
    flag = false;
 }
-   else if(number === "" || !isnum(number)){
+   else if(number === "" || !iscard(number)){
    error = "Please enter correct number";
    flag = false;
 }
@@ -31,4 +31,38 @@ $(".error").html("");
 		}
 })
 })
+$("#submit").on("click", function(){
+    validate();
+  })
 
+var isname = function (val){
+  if(val != "" || val != undefined){
+    var pattern = /^[a-zA-Z ]{2,30}$/;
+    var res = (val.match(pattern)) ?  true : false;
+    return res;
+  }
+}
+
+var iscard = function (val){
+  if(val != "" || val != undefined){
+    var pattern = /^[0-9]{14,100}$/;
+    var res = (val.match(pattern)) ?  true : false;
+    return res;
+  }
+}
+
+var isexpiry = function (val){
+   if(val!= "" || val != undefined){
+     var pattern = /^([0-9]{2}[/]?){2}$/;
+     var res = (val.match(pattern)) ? true : false;
+     return res;
+   }
+}
+
+var iscvv = function (val){
+   if(val!= "" || val != undefined){
+     var pattern = /^[0-9]{3}$/;
+     var res = (val.match(pattern)) ? true : false;
+     return res;
+   }
+}

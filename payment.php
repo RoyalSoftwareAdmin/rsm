@@ -13,8 +13,8 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/metisMenu.min.js"></script>
 	<script src="js/custom.js"></script>
-    <script src="js/common/common1.js" type="text/javascript"></script>
-    <link href="css/sty1.css" rel="stylesheet" type="text/css">
+    <link href="css/modules/payment.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
@@ -64,7 +64,7 @@
 						   <label class="user">CVV </label>
 						    <div class="input-group">
 							             
-										 <input type="text" class="form-control" id="cvv" name="cvv" placeholder="----">
+										 <input type="text" class="form-control" id="cvv" name="cvv" placeholder="---">
 							
 							
 							        </div>
@@ -116,7 +116,7 @@
 	 <div class="col-md-12">
 	 
 	 <div class="foot">
-	   <p>&copy; 2018 Royal Softwares. All Rights Reserved | Designed by <a href="#"><strong>Royal Softwares</strong></a></p>
+		 <?php include("footer.php"); ?>
 	 </div>
 	 
 	</div>
@@ -126,16 +126,9 @@
   </section>
 
 <!--<script src="js/jquery-1.11.1.min.js"></script>-->
- <script src="js/bootstrap.js"> </script>
- 
-
-  <script type="text/javascript" src="js/modules/payment.js">
-	     $("#submit").on("click", function(){
-				validate();
-			})
-	   </script>
- 
- 
+<script src="js/bootstrap.js"> </script>
+<script type="text/javascript" src="js/common/common.js"></script>
+<script type="text/javascript" src="js/modules/payment.js"></script>
 </body>
 
 </html> 

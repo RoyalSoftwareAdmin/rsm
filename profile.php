@@ -1,4 +1,4 @@
-<!--
+ <!--
 Author: Madhusudhana R K
 Author URL: http://www.royalsoftwaresolution.com
 
@@ -7,6 +7,13 @@ License: Licence owned by Royal Softwares
 License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 
 -->
+<?php 
+	session_start();
+	// if(!isset($_SESSION['login_user'])){
+	//	header("Location: profile.php");
+	//}
+	
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -24,6 +31,8 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 
 <!-- //For-Mobile-Apps -->
 <!-- Style -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/common/common.js"></script>
  <link rel="stylesheet" href="css/modules/profile.css" type="text/css" media="all" />
 
 	<script src="js/jquery-1.11.1.min.js"></script>
@@ -44,9 +53,17 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 
 </head>
 <body>
-
+<div class="container">
+      <div class="status">
+	  <div class="row">
+	  <div class="col-md-6">
+	  
 	<h1>Enter Your Details</h1>
-
+	<h2 id="userStatus"></h2>
+</div>
+</div>
+</div>
+</div>
 <div class="container">
 
 	<div class="tabs-menu">
@@ -65,42 +82,53 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 		     	<form>
 		     		<p>Date of Birth</p>
 			      	<input type="date" class="user"  />
-		     		<p>Email</p>
-			      	<input type="text" class="mail"  />
-			      	<p>Password</p>
-			      	<input type="password" class="pass"  />
-			      	<p>Repeat Password</p>
-			      	<input type="password" class="pass"  />
-					<a class="button outline-inward">SUBMIT</a>
+		     		<p>Country</p>
+			      	<select>
+              <option value="" selected="selected">INDIA</option>
+                   <option value="1">USA</option>
+                  <option value="2">ENGLAND</option>
+				   <option value="2">CHINA</option>
+                         </select>
+			      	<p>State</p>
+			      	<select>
+              <option value="" selected="selected">Karnataka</option>
+                   <option value="1">KERELA</option>
+                  <option value="2">DELHI</option>
+				   <option value="2">RAJASTAN</option>
+                         </select>
+			      	<p>Zip</p>
+			      	<input type="text" class="pass zipp" id="zip"/>
+					<div class="error"></div>
+					<a class="button outline-inward" id="submit">SUBMIT</a>
 			 	</form>
 			</div>
 		</div>
 		<div id="tab2" class="tab-grid">
 			<div class="signin">
 		     	<form>
-		     		<p>Date of Birth</p>
-			      	<input type="calender" class="user"  />
-		     		<p>Email</p>
-			      	<input type="text" class="mail"  />
-			      	<p>Password</p>
-			      	<input type="password" class="pass"  />
-			      	<p>Repeat Password</p>
-			      	<input type="password" class="pass"  />
-					<a class="button outline-inward">SUBMIT</a>
+		     		<p>College</p>
+			      	<input type="text" class="user col"  />
+		     		<p>Department</p>
+			      	<select>
+              <option value="" selected="selected">CS</option>
+                   <option value="1">IS</option>
+                  <option value="2">EC</option>
+				   <option value="2">MECHANICAL</option>
+                         </select>
+			      	<p>Section</p>
+			      	<input type="text" class="pass sec"  />
+			      	<p>Usn</p>
+			      	<input type="text" class="pass usnn" id="usn"  />
+					<div class="error"></div>
+					<a class="button outline-inward" id="submit0">SUBMIT</a>
 			 	</form>
 			</div>
 		</div>
 		<div id="tab3" class="tab-grid">
 			<div class="signin">
 		     	<form>
-		     		<p>Date of Birth</p>
-			      	<input type="calender" class="user"  />
-		     		<p>Email</p>
-			      	<input type="text" class="mail"  />
-			      	<p>Password</p>
-			      	<input type="password" class="pass"  />
-			      	<p>Repeat Password</p>
-			      	<input type="password" class="pass"  />
+		     		<p>ENTER YOUR TECHNICAL SKILLS WITH COMMA SEPERATED VALUES</p>
+			      
 					<a class="button outline-inward">SUBMIT</a>
 			 	</form>
 			</div>
@@ -108,30 +136,32 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 		<div id="tab4" class="tab-grid">
 			<div class="signin">
 		     	<form>
-		     		<p>Date of Birth</p>
-			      	<input type="calender" class="user"  />
-		     		<p>Email</p>
-			      	<input type="text" class="mail"  />
-			      	<p>Password</p>
-			      	<input type="password" class="pass"  />
-			      	<p>Repeat Password</p>
-			      	<input type="password" class="pass"  />
-					<a class="button outline-inward">SUBMIT</a>
+
+		     		<p>Personal mobile</p>
+			      	<input type="text" class="user mob" id="mobile"  />
+		     		<p>Office Number</p>
+			      	<input type="text" class="mail mal" />
+			      	<p>Email</p>
+			      	<input type="text" class="pass" id="email"  />
+			      	<p>Website</p>
+			      	<input type="password" class="pass web"  />
+					<div class="error"></div>
+					<a class="button outline-inward" id="submit1">SUBMIT</a>
 			 	</form>
 			</div>
 		</div>
 		<div id="tab5" class="tab-grid">
 			<div class="signin">
 		     	<form>
-		     		<p>Date of Birth</p>
-			      	<input type="calender" class="user"  />
-		     		<p>Email</p>
-			      	<input type="text" class="mail"  />
-			      	<p>Password</p>
-			      	<input type="password" class="pass"  />
-			      	<p>Repeat Password</p>
-			      	<input type="password" class="pass"  />
-					<a class="button outline-inward">SUBMIT</a>
+		     		<p>Resume
+			      	<input type="file" class="f1"></input><p>
+		     		<p class="p1">Cover Letter <input type="file" class="f1"></input></p>
+			      	
+			      	
+			      	<p class="tet">Other Details
+			      	<textarea  rows="10" col="5" id="comment">
+	                 </textarea></p>					 
+					<a class="button outline-inward in">SUBMIT</a>
 			 	</form>
 			</div>
 		</div>
@@ -147,5 +177,13 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 </div>
     <!--//footer-->
 </div>
+<script src="js/bootstrap.js"> </script>
+
+<script type="text/javascript" src="js/modules/profilemob.js"></script>
+<script type="text/javascript" src="js/modules/profileusn.js"></script>
+
+		<script type="text/javascript" src="js/modules/profilezip.js"></script>
+		
+		
 </body>
 </html>
