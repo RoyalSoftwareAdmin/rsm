@@ -22,9 +22,9 @@ var regex = function (val){
 		return res;
 	}
 }
-var isusn = function (val){
+var isusn = function (val , pattern){
 	if(val != "" || val != undefined){
-		var pattern =  /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{3}[0-9]{2}$/;
+		//var pattern =  /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{3}[0-9]{2}$/;
 		var res = (val.match(pattern)) ?  true : false;
 		return res;
 	}
@@ -94,22 +94,22 @@ $(document).ready(function() {
 
 		var reheight = window.innerHeight;
 
-		if((height - reheight) > 100 ){
-	  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
-			setTimeout(function(){
-				window.location = "http://www.royalsoftwaresolution.com"
-			},1000);
-	  	}
+		// if((height - reheight) > 100 ){
+	 //  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
+		// 	setTimeout(function(){
+		// 		window.location = "http://www.royalsoftwaresolution.com"
+		// 	},1000);
+	 //  	}
 
 	});
 
-	if((height - reheight) > 100 ){
-  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
-		setTimeout(function(){
-			window.location = "http://www.royalsoftwaresolution.com"
-		},1000);
+	// if((height - reheight) > 100 ){
+ //  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
+	// 	setTimeout(function(){
+	// 		window.location = "http://www.royalsoftwaresolution.com"
+	// 	},1000);
 
-  	}
+ //  	}
 
 }); 
 

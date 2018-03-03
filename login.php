@@ -128,10 +128,11 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 		
 		
 		<!--footer-->
-			<?php include("footer.php"); ?>
+		
 		<!--//footer-->
 	   
 	 </div>  
+	 	<?php include_once("footer.php"); ?>
 	    <script src="js/bootstrap.js"> </script>	    
 	    <script type="text/javascript" src="js/common/common.js"></script>
 	  	 <script type="text/javascript" src="js/modules/login.js"></script>

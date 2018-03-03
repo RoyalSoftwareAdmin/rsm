@@ -49,7 +49,7 @@ body {
 
 h1 {
     text-align: center;
-    margin: 50px 0;
+    margin: 50px 0 0 0 ;
     font-family: Oswald-Light;
     font-weight: bold;
     font-size: 35px;
@@ -227,7 +227,7 @@ input.pass {
 
 @media screen and (max-width: 1920px) {
     h1 {
-        margin: 100px 0;
+        margin: 100px 0 0 0;
         font-size: 40px;
     }
     .container {
@@ -238,7 +238,7 @@ input.pass {
 
 @media screen and (max-width:1680px) {
     h1 {
-        margin: 80px 0;
+        margin: 80px 0 0 0;
         font-size: 40px;
     }
     .container {
@@ -248,7 +248,7 @@ input.pass {
 
 @media screen and (max-width:1366px) {
     h1 {
-        margin: 30px 0;
+        margin: 30px 0 0 0;
         font-size: 35px;
     }
     .container {
@@ -262,14 +262,14 @@ input.pass {
 
 @media screen and (max-width:1280px) {
     h1 {
-        margin: 50px 0;
+        margin: 50px 0 0 0;
         font-size: 35px;
     }   
 }
 
 @media screen and (max-width:1024px) {
     h1 {
-        margin: 30px 0;
+        margin: 30px 0 0 0;
     }
     .container {
         width: 75%;
@@ -353,7 +353,7 @@ input.pass {
 
 @media screen and (max-width:768px) {
     h1 {
-        margin: 60px 0;
+        margin: 60px 0 0 0;
     }
 .container {
     width: 85%;
@@ -407,7 +407,7 @@ form {
 
 @media screen and (max-width:736px) {
     h1 {
-        margin: 40px 0;
+        margin: 40px 0 0 0;
     }
     .container {
         width: 85%;
@@ -416,7 +416,7 @@ form {
 
 @media screen and (max-width:667px) {
     h1 {
-        margin: 40px 0;
+        margin: 40px 0 0 0;
     }
     .container {
         width: 95%;
@@ -707,7 +707,7 @@ form {
 	margin-left:10px;
 }
 .comment{
-	overflow:scroll;
+	overflow:hidden;
 }
 
 .gg :active{
@@ -715,8 +715,20 @@ form {
 }
  
 
+#userStatus{
+    color: rgb(255, 0, 0);
+    font-size: 2em;
+    text-align: center;
 
-
+    }    
+textarea {
+    resize: none;
+    width:100%;
+    height:auto;
+}
+.pp a{
+    margin-top : 67px;
+}
 
 
 
