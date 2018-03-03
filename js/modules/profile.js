@@ -94,27 +94,51 @@ $.ajax({
 			 }
 		},
 		error : function(error) {
-					console.log(error.responseText);
+					console.log(error.responseText); 
 					$(".error").show();
 				}
 				
 		
 		
 	})
+var CountryOption = "" , StateOption = "" , departmentOption ="";
+	countryList.forEach(function(k,r){
+		CountryOption += "<option value='"+k.value+"'>"+k.name+"</option>";
+	})
+	$("#countryList").html(CountryOption);
+
+  	stateList.forEach(function(k,r){
+		StateOption += "<option value='"+k.value+"'>"+k.name+"</option>";
+	})
+	$("#stateList").html(StateOption);
+
+	departmentList.forEach(function(k,r){
+		departmentOption += "<option value='"+k.value+"'>"+k.name+"</option>";
+	})
+	$("#departmentList").html(departmentOption);
+
 })
 
 
 /* USN validation*/
 
 var error = "";
+var flagUsn = 1;
+$("#departmentList").on("change" , function(){
+	($(this).val() == "MCA") ? flagUsn = 1 : flagUsn =2 ;
+})
+
 $(document).ready(function(){
-	$("#submit0").on("click", function(){
+	$("#submit0").on("click", function(){ 
 		$(".error").html("");
 		 var usn = $("#usn").val(),
-		     
-			flag = true;
+		 			flag = true;
+
+		     var pattern =  /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{3}[0-9]{2}$/;
+		     var pattern2 =  /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{3}$/;
+		     var pat = (flagUsn == 1) ? pattern : pattern2;
 			
-			if(usn === "" || !isusn(usn)){
+			if(usn === "" || !isusn(usn, pat)){
 				error= "Enter correct usn number Eg:4VZ13MCA70";
 				flag = false;
 			}
@@ -123,6 +147,9 @@ $(document).ready(function(){
 			
 			if(!flag){
 				$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
+			}else{
+				var token = parseInt($("#submit0").attr("href").split("tab")[1]) + 1;
+				 $(".tab"+token).click();
 			}
 	})
 })
