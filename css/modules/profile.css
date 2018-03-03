@@ -76,6 +76,9 @@ h1 {
 .tabs-menu .active a{
     color:#fe9753;
 }
+
+
+
 .tabs-menu ul li a {
 	display: block;
     padding: 20px 5px;
@@ -97,6 +100,7 @@ h1 {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+	 
 }
 a {
     color: #FFF;
@@ -702,9 +706,18 @@ form {
 	float:right;
 	margin-left:10px;
 }
-@media(min-width: 320px)and(max-width: 712px) {
-	p{
-	margin-top:20px;
+.comment{
+	overflow:scroll;
 }
+
+.gg :active{
+	color:red;
 }
+ 
+
+
+
+
+
+
 /*--- Responsinator Code ---*/
