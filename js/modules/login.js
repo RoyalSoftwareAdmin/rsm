@@ -15,22 +15,23 @@ $("#submit").on("click", function(){
 	}
 	
 	if(!flag){
-		$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "10px 0px"});
+		$(".error").html(error);
 	}else{
 		$.ajax({
-			url : "http://royalsoftwaresolution.com/RoyalBackend/data.php",
-			data : {"layout" : 1001, "username" : email , "password" : password},
+			url : "apis/GenricData.php",
+			data : {"layout" : 1002, "email" : email , "password" : password},
 			method : "POST",
-			success: function( result){
+			success: function( resultData){
+				var result = JSON.parse(resultData);
 				console.log(result);
-				if(result.Status != 0){
+				if(result.Status == 1){
 					_session = result;
 					localStorage.setItem("session", JSON.stringify(_session));
-					window.location = "index.html";
+					window.location = "index.php";
 				}
 				else{
-					$("#errModal").show();
-					window.clear();
+					sessionStorage.clear();
+					$(".error").html(result.Status);
 				}
 			},
 			error : function(error) {
@@ -38,10 +39,4 @@ $("#submit").on("click", function(){
 			}
 		})
 	}
-})
-
-$(document).ready(function(){
-	$(".closeModal").on("click", function(){
-		$("#errModal").hide(); 
-	})
 })

@@ -36,3 +36,9 @@
     width: 100%;
     color: #F00;
 }
+.error{
+    color:#FF0000;
+    font-weight:bold;
+    text-align:center;
+    margin:10px 0px;
+}

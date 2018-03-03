@@ -64,45 +64,12 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			
 				</div>
 			</div>
-			
-			<!-- Modal -->
-           
-			<!--footer-->
-			
-		    <!--//footer-->
-		  </div>
-	    <div class="modal fade in" id="errModal"  aria-hidden="true">
-            <div class="modal-dialog" role="document">
-				<div class="modal-content">
-                  
-				  <div class="modal-header">
-                  <h2 class="modal-title" style="color: black" id="ModalTitle">Add Details</h2>
-                  <button type="button" class="close" data-dismiss="modal" >
-                 	 <span aria-hidden="true">&times;</span>
-                  </button>
-                  </div>             
-			          <div class="modal-body">
-                      <div> Display Nothing</div>
-                      </div>
-	                    <div class="modal-footer">
-                      	<button type="button" class="btn btn-default closeModal" data-dismiss="modal" >Close</button>
-                        </div>
-           
-		        </div>
-                
-			</div>
-                 
-		</div>  
+	    </div>	   
 
 	   <?php include("footer.php"); ?>
 	    
 	    <script src="js/bootstrap.js"> </script>	    
 	    <script type="text/javascript" src="js/common/common.js"></script>
-	  	 <script type="text/javascript" src="js/modules/login.js"></script>
-	  	 <script>	
-	     $("#submit").on("click", function(){
-				validate();
-			})
-	   </script>
+	  	 <script type="text/javascript" src="js/modules/login.js"></script>	  	
 	</body>
 </html>

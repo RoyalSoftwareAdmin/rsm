@@ -1,8 +1,3 @@
-<?php 
-	if( !isset($_SESSION["user"]) ){
-        exit(header("Location: login.php"));
-    }     
-?>
 <!--
 Author: Madhusudhana R K
 Author URL: http://www.royalsoftwaresolution.com
@@ -13,6 +8,12 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 
 -->
 
+<?php 
+session_start();
+	if( !isset($_SESSION["user"]) ){
+        exit(header("Location: login.php"));
+    }     
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
