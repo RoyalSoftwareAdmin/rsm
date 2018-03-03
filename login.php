@@ -45,7 +45,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 							<div class="forgot-grid">
 								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Remember me</label>
 								<div class="forgot">
-									<a href="#">forgot password?</a>
+									<a class="forgotpass">forgot password?</a>
 								</div>								
 								<div class="clearfix"> </div>
 							</div>
@@ -64,13 +64,9 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			
 				</div>
 			</div>
-			
-			<!-- Modal -->
            
-			<!--footer-->
-			
-		    <!--//footer-->
-		  </div>
+		  
+		  <!-- Modal -->
 	    <div class="modal fade in" id="errModal"  aria-hidden="true">
             <div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -81,12 +77,14 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
                  	 <span aria-hidden="true">&times;</span>
                   </button>
                   </div>             
-			          <div class="modal-body">
+			      
+				  <div class="modal-body">
                       <div> Display Nothing</div>
-                      </div>
-	                    <div class="modal-footer">
+                  </div>
+	              
+				  <div class="modal-footer">
                       	<button type="button" class="btn btn-default closeModal" data-dismiss="modal" >Close</button>
-                        </div>
+                  </div>
            
 		        </div>
                 
@@ -94,8 +92,46 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
                  
 		</div>  
 
-	   <?php include("footer.php"); ?>
-	    
+		<!--Modal 2 forgot-password-content-->
+		<div class="modal fade in" id="frgtPass"  aria-hidden="true">
+            <div class="modal-dialog" role="document">
+				<div class="modal-content">
+                  
+				  <div class="modal-header">
+                  <h2 class="modal-title" style="color: black" id="ModalTit">Recover Password</h2>
+                  <!--<button type="button" class="close" data-dismiss="modal" >
+                 	 <span aria-hidden="true">&times;</span>
+                  </button>-->
+                  </div>             
+			      
+				  <div class="modal-body">
+                      <div class="form2">
+                      <label for="exampleInputEmail1a">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1a" aria-describedby="emailHelp" placeholder="Enter email">
+                     </div>
+                  </div>
+	              
+				  <div class="modal-footer">
+				        <button type="button" class="btn btn-default">Submit</button>
+                      	<button type="button" class="btn btn-default closeMod" data-dismiss="modal" >Close</button>
+                  </div>
+           
+		        </div>
+                
+			</div>
+                 
+		</div>  
+
+		<!--Modal 2 ends -->
+		
+		
+		
+		
+		<!--footer-->
+			<?php include("footer.php"); ?>
+		<!--//footer-->
+	   
+	 </div>  
 	    <script src="js/bootstrap.js"> </script>	    
 	    <script type="text/javascript" src="js/common/common.js"></script>
 	  	 <script type="text/javascript" src="js/modules/login.js"></script>
