@@ -1,11 +1,8 @@
  <!--
 Author: Madhusudhana R K
 Author URL: http://www.royalsoftwaresolution.com
-
 License: Licence owned by Royal Softwares
-
 License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
-
 -->
 <?php 
 	session_start();
@@ -34,6 +31,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 <script src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/common/common.js"></script>
  <link rel="stylesheet" href="css/modules/profile.css" type="text/css" media="all" />
+ 
 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script>
@@ -44,8 +42,10 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			$("#tab5").hide();
 			$(".tabs-menu a").click(function(event){
 				event.preventDefault();
+				
 				var tab=$(this).attr("href");
 				$(".tab-grid").not(tab).css("display","none");
+			    
 				$(tab).fadeIn("slow");
 			});
 		});
@@ -67,13 +67,15 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 <div class="container">
 
 	<div class="tabs-menu">
-		<ul>
+	<div id="menu">
+		<ul class="nav nav-tabs">
 			<li class="active"><a href="#tab1">Personal</a></li>
-			<li><a href="#tab2">Education</a></li>
-			<li><a href="#tab3">Technical</a></li>
-			<li><a href="#tab4">Contact</a></li>
-			<li><a href="#tab5">Others</a></li>
+			<li class=""><a href="#tab2">Education</a></li>
+			<li class=""><a href="#tab3">Technical</a></li>
+			<li class=""><a href="#tab4">Contact</a></li>
+			<li class=""><a href="#tab5">Others</a></li>
 		</ul>
+	</div>
 	</div>
 
 	<div class="tab-grids">
@@ -99,37 +101,41 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			      	<p>Zip</p>
 			      	<input type="text" class="pass zipp" id="zip"/>
 					<div class="error"></div>
-					<a class="button outline-inward" id="submit">SUBMIT</a>
+					<a href="#tab2" class="button outline-inward" id="submit">NEXT</a>
 			 	</form>
 			</div>
 		</div>
 		<div id="tab2" class="tab-grid">
 			<div class="signin">
 		     	<form>
-		     		<p>College</p>
-			      	<input type="text" class="user col"  />
+		     		<p >College</p>
+			      	<input id="my-field" type="text" class="user col" >
 		     		<p>Department</p>
 			      	<select>
-              <option value="" selected="selected">CS</option>
+              <option value="" selected="selected"> CS </option>
                    <option value="1">IS</option>
                   <option value="2">EC</option>
 				   <option value="2">MECHANICAL</option>
                          </select>
 			      	<p>Section</p>
-			      	<input type="text" class="pass sec"  />
+			      	<input id="my-field1" type="text" class="pass sec" />
+					
 			      	<p>Usn</p>
 			      	<input type="text" class="pass usnn" id="usn"  />
 					<div class="error"></div>
-					<a class="button outline-inward" id="submit0">SUBMIT</a>
+					<a href="#tab3" class="button outline-inward" id="submit0">NEXT</a>
 			 	</form>
+				
 			</div>
 		</div>
 		<div id="tab3" class="tab-grid">
 			<div class="signin">
 		     	<form>
-		     		<p>ENTER YOUR TECHNICAL SKILLS WITH COMMA SEPERATED VALUES</p>
+				<textarea rows="15" class="comment">
+	                 </textarea>
+		     		
 			      
-					<a class="button outline-inward">SUBMIT</a>
+					<a href="#tab4" class="button outline-inward">NEXT</a>
 			 	</form>
 			</div>
 		</div>
@@ -146,7 +152,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			      	<p>Website</p>
 			      	<input type="password" class="pass web"  />
 					<div class="error"></div>
-					<a class="button outline-inward" id="submit1">SUBMIT</a>
+					<a href="#tab5" class="button outline-inward" id="submit1">NEXT</a>
 			 	</form>
 			</div>
 		</div>
@@ -159,9 +165,9 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			      	
 			      	
 			      	<p class="tet">Other Details
-			      	<textarea  rows="10" col="5" id="comment">
+			      	<textarea  rows="10" col="5" class="comment">
 	                 </textarea></p>					 
-					<a class="button outline-inward in">SUBMIT</a>
+					<a href="#tab1" class="button outline-inward in">SUBMIT</a>
 			 	</form>
 			</div>
 		</div>
@@ -172,17 +178,19 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 
 </div>
 
+
 <div class="footer">
    <p>&copy; 2018 Royal Softwares. All Rights Reserved | Design by <a href="http://www.royalsoftwaresolution.com/" target="_blank">Royal Softwares </a></p>
 </div>
     <!--//footer-->
 </div>
+
 <script src="js/bootstrap.js"> </script>
+<script type="text/javascript" src="js/modules/profile.js"></script>
 
-<script type="text/javascript" src="js/modules/profilemob.js"></script>
-<script type="text/javascript" src="js/modules/profileusn.js"></script>
 
-		<script type="text/javascript" src="js/modules/profilezip.js"></script>
+</script>
+
 		
 		
 </body>
