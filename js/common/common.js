@@ -8,7 +8,7 @@ var isalpha = function (val){
 
 var isnum = function (val){
 	if(val != "" || val != undefined){
-		var pattern = /^[0-9 ]{10}$/;
+		var pattern = /^[789]\d{9}$/;
 		var res = (val.match(pattern)) ?  true : false;
 		return res;
 	}
@@ -17,14 +17,14 @@ var isnum = function (val){
 
 var regex = function (val){
 	if(val != "" || val != undefined){
-		var pattern =  /^\d{6}$/;
+		var pattern =  /^[1-9]\d{5}$/;
 		var res = (val.match(pattern)) ?  true : false;
 		return res;
 	}
 }
 var isusn = function (val){
 	if(val != "" || val != undefined){
-		var pattern =  /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{3}$/;
+		var pattern =  /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{3}[0-9]{2}$/;
 		var res = (val.match(pattern)) ?  true : false;
 		return res;
 	}
@@ -92,24 +92,24 @@ $(document).ready(function() {
 
 	$( window ).resize(function() {
 
-		// var reheight = window.innerHeight;
+		var reheight = window.innerHeight;
 
-		// if((height - reheight) > 100 ){
-	 //  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
-		// 	setTimeout(function(){
-		// 		window.location = "http://www.royalsoftwaresolution.com"
-		// 	},1000);
-	 //  	}
+		if((height - reheight) > 100 ){
+	  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
+			setTimeout(function(){
+				window.location = "http://www.royalsoftwaresolution.com"
+			},1000);
+	  	}
 
 	});
 
-	// if((height - reheight) > 100 ){
- //  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
-	// 	setTimeout(function(){
-	// 		window.location = "http://www.royalsoftwaresolution.com"
-	// 	},1000);
+	if((height - reheight) > 100 ){
+  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
+		setTimeout(function(){
+			window.location = "http://www.royalsoftwaresolution.com"
+		},1000);
 
- //  	}
+  	}
 
 }); 
 
