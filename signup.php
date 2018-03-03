@@ -114,7 +114,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 </div>
 			<!--footer-->
 			<div class="footer">
-			   <?php include("header.php"); ?>
+			   <?php include("footer.php"); ?>
 			</div>
 	        <!--//footer-->
 		</div>

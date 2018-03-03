@@ -1,3 +1,28 @@
+
+$(document).ready(function(){
+	  
+function testInput(event) {
+   var value = String.fromCharCode(event.which);
+   var pattern = new RegExp(/[a-z]/i);
+   return pattern.test(value);
+}
+$('#my-field').bind('keypress', testInput);
+
+  })
+  $(document).ready(function(){
+	  
+function testInput(event) {
+   var value = String.fromCharCode(event.which);
+   var pattern = new RegExp(/[a-z]/i);
+   return pattern.test(value);
+}
+$('#my-field1').bind('keypress', testInput);
+
+  })
+  
+ 
+  
+
 var error = "";
 $(document).ready(function(){
 	$("#submit").on("click", function(){
@@ -77,3 +102,61 @@ $.ajax({
 		
 	})
 })
+
+
+/* USN validation*/
+
+var error = "";
+$(document).ready(function(){
+	$("#submit0").on("click", function(){
+		$(".error").html("");
+		 var usn = $("#usn").val(),
+		     
+			flag = true;
+			
+			if(usn === "" || !isusn(usn)){
+				error= "Enter correct usn number Eg:4VZ13MCA70";
+				flag = false;
+			}
+			
+			
+			
+			if(!flag){
+				$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
+			}
+	})
+})
+
+
+/* MOBILE N EMAIL VALIDATION */
+
+var error = "";
+$(document).ready(function(){
+	$("#submit1").on("click", function(){
+		$(".error").html("");
+		
+		     
+		  var num = $("#mobile").val(),
+			email = $("#email").val(),
+			flag = true;
+			
+	
+			    if(num === "" || !isnum(num)){
+				error= "Enter correct 10 digit number Eg:9123456789";
+				flag = false;
+			}
+			else if(email === "" || !ismail(email)){
+				error = "Enter correct Mail Eg: mail@royalsoftwaresolution.com";
+				flag = false;
+			}
+			
+			
+			if(!flag){
+				$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
+			}
+	})
+})
+
+  
+
+    
