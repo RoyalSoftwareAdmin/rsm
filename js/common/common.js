@@ -44,6 +44,15 @@ var ispass = function(val){
 		return res;
 	}
 }
+
+
+var uid = function(val){
+	if(val != "" || val != undefined){
+		var pattern = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{8,100}$/;
+		var res = (val.match(pattern)) ?  true : false;
+		return res;
+	}
+}
 var isaadhar = function (val){
 	if(val != "" || val != undefined){
 		var pattern = /^[0-9 ]{12}$/;

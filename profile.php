@@ -100,17 +100,16 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 		<div id="tab2" class="tab-grid">
 			<div class="signin">
 		     	<form>
-		     		<p >College</p>
+		     		<p >Organization</p>
 			      	<input id="my-field" type="text" class="user col" >
 		     		<p>Department</p>
-			      	<select id="departmentList">></select>
-			      	<p>Section</p>
-			      	<input id="my-field1" type="text" class="pass sec" />
-					
-			      	<p>Usn</p>
-			      	<input type="text" class="pass usnn" id="usn"  />
+			      	<input id="my-field1" type="text" class="user col" >
+			      	<p>Blood Group</p>
+                      <select id="bloodList"> </select>
+			      	<p>ID</p>
+			      	<input type="text" class="pass usnn" id="ids"  />
 					<div class="error"></div>
-					<a href="#tab3" class="button outline-inward submit" id="submit0">NEXT</a>
+					<a href="#tab3" class="button outline-inward" id="submit0">NEXT</a>
 			 	</form>
 				
 			</div>
@@ -131,7 +130,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 		     	<form>
 
 		     		<p>Personal mobile</p>
-			      	<input type="text" class="user mob" id="mobile"  />
+			      	<input type="text" class="user mob" id="mobile" maxlength="10" />
 		     		<p>Office Number</p>
 			      	<input type="text" class="mail mal" />
 			      	<p>Email</p>
@@ -173,7 +172,8 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 <script type="text/javascript" src="js/modules/profile.js"></script>
 
 
-</script>
+
+
 
 		
 		
