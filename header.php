@@ -92,7 +92,21 @@ session_start();
                 <a href="index.html">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
-              </li>			 
+              </li>	
+              <li class="treeview">
+                <a href="#">
+                <i class="fa fa-laptop"></i>
+                <span>Technical</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Big Data Analysis</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Coding and Programming</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Project Management</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Social Media Experience</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Technical Writing</a></li>
+                </ul>
+              </li>		 
             </ul>
           </div>
           <!-- /.navbar-collapse -->
