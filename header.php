@@ -106,7 +106,48 @@ session_start();
                   <li><a href="#"><i class="fa fa-angle-right"></i> Social Media Experience</a></li>
                   <li><a href="#"><i class="fa fa-angle-right"></i> Technical Writing</a></li>
                 </ul>
-              </li>		 
+              </li>	
+              <li class="treeview">
+                <a href="#">
+                <i class="fa fa-pie-chart"></i>
+                <span>Reports</span> 
+               <button type="button" class="btn btn-danger btn-xs pull-right">new</button>
+                 </a>
+               </li>	
+              <li class="treeview">
+                <a href="#">
+                
+                <i class="fa fa-user"></i>
+                <span>Your Account</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i> General</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Payment</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Previous Test</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Remarks</a></li>
+                 
+                </ul>
+              </li>	
+               <li class="treeview">
+                <a href="#">
+                <i class="fa fa-link"></i>
+                <span>Useful Links</span>
+                <button type="button" class="btn btn-success btn-xs pull-right">08</button>
+                </a>
+               </li>	
+               <li class="treeview">
+                <a href="#">
+                <i class="fa fa-edit"></i>
+                <span>Others</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Sale in Mysore</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Mysore shoppy</a></li>
+                   </ul>
+              </li>	
+
             </ul>
           </div>
           <!-- /.navbar-collapse -->
