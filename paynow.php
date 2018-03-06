@@ -63,41 +63,16 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
           var payuForm = document.forms.payuForm;
           payuForm.submit();
         }
-      </script>
-      <style type="text/css">
-        .modal-content{
-          width: 100%;
-          margin: 0%;
-        }
-        .modal-dialog{
-          width: 100%;
-          left: 0px;
-          margin: 0px;
-        }
-        form{
-          width: 65%;
-          margin: 0px;
-        }
-        input#submit{
-          width: 30%;
-          margin: 10% 30%;
-        }
-        .modal{
-          padding: 0px;
-        }
-      </style>
+      </script>     
   </head>
   <body onload="submitPayuForm()">
-    
     <div class="container">
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
          <!-- Modal content-->
          <!-- payment Modal start here-->
           <div class="modal-content">
-          <div class="modal-header">
-            <h2> Welcome <?php echo $_SESSION["login_user"] ?> ! Please Enter All The Details</h2>
-              <br/>
+          <div class="modal-header">           
               <?php if($formError) { ?>
             
                 <span style="color:red">Please fill all mandatory fields.</span>
@@ -170,7 +145,7 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
                 <input name="Submit" type="submit" value="Submit" />
             </div> 
             <div class="form-group col-md-6">
-                <input name="Cancel" type="cancel" value="Cancel" />
+                <input name="Cancel" type="button" value="Cancel" />
             </div> 
             <?php } ?>
           </tr>
