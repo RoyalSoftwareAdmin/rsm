@@ -7,15 +7,6 @@ function testInput(event) {
    return pattern.test(value);
 }
 $('#my-field').bind('keypress', testInput);
-
-  })
-  $(document).ready(function(){
-	  
-function testInput(event) {
-   var value = String.fromCharCode(event.which);
-   var pattern = new RegExp(/[a-z]/i);
-   return pattern.test(value);
-}
 $('#my-field1').bind('keypress', testInput);
 
   })
@@ -101,7 +92,7 @@ $.ajax({
 		
 		
 	})
-var CountryOption = "" , StateOption = "" , departmentOption ="";
+var CountryOption = "" , StateOption = "" , bloodOption = "";
 	countryList.forEach(function(k,r){
 		CountryOption += "<option value='"+k.value+"'>"+k.name+"</option>";
 	})
@@ -112,47 +103,14 @@ var CountryOption = "" , StateOption = "" , departmentOption ="";
 	})
 	$("#stateList").html(StateOption);
 
-	departmentList.forEach(function(k,r){
-		departmentOption += "<option value='"+k.value+"'>"+k.name+"</option>";
+
+	bloodList.forEach(function(k,r){
+		bloodOption += "<option value='"+k.value+"'>"+k.name+"</option>";
 	})
-	$("#departmentList").html(departmentOption);
+	$("#bloodList").html(bloodOption);
+   })
 
-})
 
-
-/* USN validation*/
-
-var error = "";
-var flagUsn = 1;
-$("#departmentList").on("change" , function(){
-	($(this).val() == "MCA") ? flagUsn = 1 : flagUsn =2 ;
-})
-
-$(document).ready(function(){
-	$("#submit0").on("click", function(){ 
-		$(".error").html("");
-		 var usn = $("#usn").val(),
-		 			flag = true;
-
-		     var pattern =  /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{3}[0-9]{2}$/;
-		     var pattern2 =  /^[1-4][A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{3}$/;
-		     var pat = (flagUsn == 1) ? pattern : pattern2;
-			
-			if(usn === "" || !isusn(usn, pat)){
-				error= "Enter correct usn number Eg:4VZ13MCA70";
-				flag = false;
-			}
-			
-			
-			
-			if(!flag){
-				$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
-			}else{
-				var token = parseInt($("#submit0").attr("href").split("tab")[1]) + 1;
-				 $(".tab"+token).click();
-			}
-	})
-})
 
 
 /* MOBILE N EMAIL VALIDATION */
@@ -185,5 +143,27 @@ $(document).ready(function(){
 })
 
   
+
+
+
+var error = "";
+$(document).ready(function(){
+	$("#submit0").on("click", function(){
+		$(".error").html("");
+		var num = $("#ids").val(),
+			flag = true;
+			 if(num === "" || !uid(num)){
+				error= "Id should be alphanumeric ";
+				flag = false;
+			}
+			
+		if(!flag){
+	$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
+			}
+	})
+})
+
+
+
 
     
