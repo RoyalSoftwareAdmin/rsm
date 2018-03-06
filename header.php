@@ -118,7 +118,7 @@ session_start();
                 <a href="#">
                 
                 <i class="fa fa-user"></i>
-                <span>Your Account</span>
+                <span>My Account</span>
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
