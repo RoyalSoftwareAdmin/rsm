@@ -11,7 +11,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 <?php 
 session_start();
 	if( !isset($_SESSION["user"]) ){
-        exit(header("Location: login.php"));
+        exit(header("Location: ../login.php"));
     }     
 ?>
 <!DOCTYPE HTML>
