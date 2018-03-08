@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 
 
-    $(document).mousedown(function(e) {
+   $(document).mousedown(function(e) {
 
         if( e.button == 2 ) {
 
@@ -97,7 +97,7 @@ $(document).ready(function() {
 
 	    }
 
-	});
+	}); 
 
 	$( window ).resize(function() {
 

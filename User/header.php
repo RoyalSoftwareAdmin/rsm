@@ -14,6 +14,7 @@ session_start();
         exit(header("Location: ../login.php"));
     }     
 ?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -93,6 +94,8 @@ session_start();
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
               </li>	
+
+
               <li class="treeview">
                 <a href="#">
                 <i class="fa fa-laptop"></i>
@@ -100,18 +103,39 @@ session_start();
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Big Data Analysis</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Coding and Programming</a></li>
+              <li>
+                <?php
+	 if(isset($_GET['file'])){							
+	        include('include/'.$_GET['file'].'.php');
+	    }
+	$m = Array('technical','bigdata');
+		foreach($m as $k)
+	{	
+	echo"<a href ='?file=$k'>".$k." </a><br>";
+	
+	}
+	
+	?>
+	</li>
+        <li>
+        <a href="#"><i class="fa fa-angle-right"></i> Bigdata and Analysis</a></li>
+
+	
+	     <li><a href="#"><i class="fa fa-angle-right"></i> Coding and Programming</a></li>
                   <li><a href="#"><i class="fa fa-angle-right"></i> Project Management</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Social Media Experience</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> Social Media Experience</a    li>
                   <li><a href="#"><i class="fa fa-angle-right"></i> Technical Writing</a></li>
                 </ul>
               </li>	
               <li class="treeview">
+
+              	
                 <a href="#">
                 <i class="fa fa-pie-chart"></i>
                 <span>Reports</span> 
                <button type="button" class="btn btn-danger btn-xs pull-right">new</button>
+               
+	              
                  </a>
                </li>	
               <li class="treeview">
@@ -121,6 +145,8 @@ session_start();
                 <span>My Account</span>
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
+
+                
                 <ul class="treeview-menu">
                   <li><a href="#"><i class="fa fa-angle-right"></i> General</a></li>
                   <li><a href="#"><i class="fa fa-angle-right"></i> Payment</a></li>
@@ -212,3 +238,5 @@ session_start();
 			<div class="clearfix"> </div>	
 		</div>
 		<!-- //header-ends -->
+
+                
