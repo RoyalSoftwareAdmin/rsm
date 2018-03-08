@@ -96,16 +96,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
                  
 		</div>  
 
-		<!--Modal 2 ends -->
-		
-		
-		
-		
-		<!--footer-->
-		
-		<!--//footer-->
-	   
-	 </div>  
+		 </div>  
 	 	<?php include_once("footer.php"); ?>
 	    <script src="js/bootstrap.js"> </script>	    
 	    <script type="text/javascript" src="js/common/common.js"></script>

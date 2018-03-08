@@ -23,19 +23,11 @@ $("#submit").on("click", function(){
 			method : "POST",
 			success: function( resultData){
 				var result = JSON.parse(resultData);
-				if(result.UserStatus == 1){
+				console.log(result);
+				if(result.Status == 1){
 					_session = result;
 					localStorage.setItem("session", JSON.stringify(_session));
-					if(result.value == 258){
-						window.location = "Admin/index.php";
-					}
-					else if(result.value == 126){
-						window.location = "Agent/index.php";
-					}
-					else if(result.value == 64){
-						window.location = "User/index.php";
-					}
-					
+					window.location = "index.php";
 				}
 				else{
 					sessionStorage.clear();

@@ -8,6 +8,16 @@
 	function query($sql){
 		global $conn;
 		$result = mysqli_query($conn , $sql);
-		return $result;
+		if($result){
+			return $result;
+		}else{
+			echo mysqli_error($conn);
+		}
+	}
+
+	function logout(){
+		echo "Entering";
+		session_destroy();
+		exit(header("Location: ../login.php"));
 	}
 ?>
