@@ -1,0 +1,4 @@
+ 
+ RewriteEngine on
+RewriteRule ^header?$ header.php 
+RewriteRule ^link/([0-9a-zA-Z]+) header.php?a=$1 
