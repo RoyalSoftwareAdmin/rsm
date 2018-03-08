@@ -4,7 +4,9 @@
 	if ($_SERVER['REQUEST_METHOD'] == 'POST'){		
 	
 		if($_POST["layout"] === "logout"){
-			logout();
+			session_start(); //Start the current session
+			session_destroy(); //Destroy it! So we are logged out now
+			header("location: ../login.php");
 		}
 	
 
@@ -16,7 +18,7 @@
 			$gender = $_POST["gender"];
 			$status = 0;
 
-		$query = "INSERT INTO rsm_user(fname, lname, email, password, status, gender) VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $password."' ,'". $status."' ,'". $gender."')";
+		$query = "INSERT INTO rsm_user(fname, lname, email, password, status, gender, value) VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $password."' ,'". $status."' ,'". $gender."',64)";
 		$res = query($query);
 			if($res){
 				$query = "INSERT INTO rsm_login(userName, Password, value) VALUES ('".$email."' ,'".$password."', 3)";

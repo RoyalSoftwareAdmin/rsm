@@ -1,1 +1,0 @@
-<?php echo "<h1> You are  in my account</h1>"; ?>

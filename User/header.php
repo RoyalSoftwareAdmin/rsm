@@ -84,13 +84,13 @@ session_start();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <h1><a class="navbar-brand" href="index.html"><span class="fa fa-area-chart"></span> Royal <span class="dashboard_text">Skills Master</span></a></h1>
+            <h1><a class="navbar-brand" href="index.php"><span class="fa fa-area-chart"></span> Royal <span class="dashboard_text">Skills Master</span></a></h1>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="sidebar-menu">
               <li class="header">NAVIGATION</li>
               <li class="treeview">
-                <a href="index.html">
+                <a href="index.php">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
               </li>	
@@ -103,34 +103,17 @@ session_start();
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-              <li>
-                <?php
-	 if(isset($_GET['file'])){							
-	        include('include/'.$_GET['file'].'.php');
-	    }
-	$m = Array('technical','bigdata');
-		foreach($m as $k)
-	{	
-	echo"<a href ='?file=$k'>".$k." </a><br>";
-	
-	}
-	
-	?>
-	</li>
-        <li>
-        <a href="#"><i class="fa fa-angle-right"></i> Bigdata and Analysis</a></li>
-
-	
-	     <li><a href="#"><i class="fa fa-angle-right"></i> Coding and Programming</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Project Management</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Social Media Experience</a    li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Technical Writing</a></li>
-                </ul>
+			        <li><a href="?file=bigdata"><i class="fa fa-angle-right"></i> Bigdata and Analysis</a></li>
+			 	    <li><a href="?file=coding"><i class="fa fa-angle-right"></i> Coding and Programming</a></li>
+		        	<li><a href="?file=project"><i class="fa fa-angle-right"></i> Project Management</a></li>
+		          	<li><a href="?file=testing"><i class="fa fa-angle-right"></i> Testing </a></li>
+		          	<li><a href="?file=technical"><i class="fa fa-angle-right"></i> Technical Writing</a></li>
+            	</ul>
               </li>	
               <li class="treeview">
 
               	
-                <a href="#">
+                <a href="?file=reports">
                 <i class="fa fa-pie-chart"></i>
                 <span>Reports</span> 
                <button type="button" class="btn btn-danger btn-xs pull-right">new</button>
@@ -148,15 +131,15 @@ session_start();
 
                 
                 <ul class="treeview-menu">
-                  <li><a href="#"><i class="fa fa-angle-right"></i> General</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Payment</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Previous Test</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Remarks</a></li>
+                  <li><a href="?file=general"><i class="fa fa-angle-right"></i> General</a></li>
+                  <li><a href="../payment.php"><i class="fa fa-angle-right"></i> Payment</a></li>
+                  <li><a href="?file=previous"><i class="fa fa-angle-right"></i> Previous Test</a></li>
+                  <li><a href="?file=remarks"><i class="fa fa-angle-right"></i> Remarks</a></li>
                  
                 </ul>
               </li>	
                <li class="treeview">
-                <a href="#">
+                <a href="?file=usefullinks">
                 <i class="fa fa-link"></i>
                 <span>Useful Links</span>
                 <button type="button" class="btn btn-success btn-xs pull-right">08</button>
@@ -169,8 +152,8 @@ session_start();
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Sale in Mysore</a></li>
-                  <li><a href="#"><i class="fa fa-angle-right"></i> Mysore shoppy</a></li>
+                  <li><a target="_blank" href="http://www.saleinmysore.com/"><i class="fa fa-angle-right"></i> Sale in Mysore</a></li>
+                  <li><a target="_blank" href="http://www.mysoreshoppy.com/"><i class="fa fa-angle-right"></i> Mysore shoppy</a></li>
                    </ul>
               </li>	
 
@@ -228,7 +211,7 @@ session_start();
 								<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
 								<li> <a href="#"><i class="fa fa-user"></i> My Account</a> </li> 
 								<li> <a href="#"><i class="fa fa-suitcase"></i> Profile</a> </li> 
-								<li> <a href="#" class="logout"><i class="fa fa-sign-out"></i> Logout</a> </li>
+								<li> <a href="../logout.php" class="logout"><i class="fa fa-sign-out"></i> Logout</a> </li>
 							</ul>
 						</li>
 					</ul>

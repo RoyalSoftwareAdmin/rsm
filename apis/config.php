@@ -13,11 +13,5 @@
 		}else{
 			echo mysqli_error($conn);
 		}
-	}
-
-	function logout(){
-		echo "Entering";
-		session_destroy();
-		exit(header("Location: ../login.php"));
-	}
+	}	
 ?>

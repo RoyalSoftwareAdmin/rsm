@@ -1,1 +1,0 @@
-<?php echo "<h1> You are  in sale in mysore</h1>"; ?>

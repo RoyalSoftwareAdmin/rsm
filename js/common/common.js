@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 
 
-   $(document).mousedown(function(e) {
+    $(document).mousedown(function(e) {
 
         if( e.button == 2 ) {
 
@@ -97,28 +97,28 @@ $(document).ready(function() {
 
 	    }
 
-	}); 
+	});
 
 	$( window ).resize(function() {
 
 		var reheight = window.innerHeight;
 
-		if((height - reheight) > 100 ){
-	  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
-			setTimeout(function(){
-				window.location = "http://www.royalsoftwaresolution.com"
-			},1000);
-	  	}
+		// if((height - reheight) > 100 ){
+	 //  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
+		// 	setTimeout(function(){
+		// 		window.location = "http://www.royalsoftwaresolution.com"
+		// 	},1000);
+	 //  	}
 
 	});
 
-	if((height - reheight) > 100 ){
-  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
-		setTimeout(function(){
-			window.location = "http://www.royalsoftwaresolution.com"
-		},1000);
+	// if((height - reheight) > 100 ){
+ //  		$("body").html("<div class='thief'><div class='thiefMsg'> Your IP ("+ip+") is watching, Don't try to hack </div></div>");
+	// 	setTimeout(function(){
+	// 		window.location = "http://www.royalsoftwaresolution.com"
+	// 	},1000);
 
-  	}
+ //  	}
   	$(".logout").on("click", function(){
   		$.ajax({
 			url : "apis/GenricData.php",

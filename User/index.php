@@ -59,24 +59,24 @@
          </div>
         <div class="clearfix"> </div>
     </div>
-    
-    <div class="row-one widgettable">
-        <div class="col-md-12 content-top-2 card">
-            <div class="agileinfo-cdr">
-                <div class="card-header">
-                    <h3>Over All Result</h3>
-                </div>
-                
-                    <div id="Linegraph" style="width: 98%; height: 350px">
-                        
-
-
+    <?php
+        if(isset($_GET['file'])){                           
+            include('include/'.$_GET['file'].'.php');
+        }else{ ?>
+             <div class="row-one widgettable">
+                <div class="col-md-12 content-top-2 card">
+                    <div class="agileinfo-cdr">
+                        <div class="card-header">
+                            <h3>Over All Result</h3>
+                        </div>
+                            <div id="Linegraph" style="width: 98%; height: 350px">                       
+                            </div>
                     </div>
-                    
-            </div>
-        </div>      
-        <div class="clearfix"> </div>
-    </div>              
+                </div>      
+                <div class="clearfix"> </div>
+            </div>  
+      <?php  } ?>    
+               
     
     <script  src="js/index1.js"></script>   
         <div class="charts">        
