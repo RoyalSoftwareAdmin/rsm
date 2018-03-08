@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2018 at 06:25 AM
+-- Generation Time: Mar 08, 2018 at 07:59 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -37,6 +37,14 @@ CREATE TABLE `rsm_user` (
   `gender` varchar(10) NOT NULL,
   `value` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rsm_user`
+--
+
+INSERT INTO `rsm_user` (`fname`, `lname`, `email`, `password`, `status`, `gender`, `value`) VALUES
+('royal', 'admin', 'royal@royalsoftware.com', '7a50d66b23e07be28b766721a85fb00b', 0, 'Male', 256),
+('test', 'user', 'test@gmail.com', '8e16dbf6bd4ca855b60b64078c4ce9bd', 0, 'Male', 64);
 
 --
 -- Indexes for dumped tables
