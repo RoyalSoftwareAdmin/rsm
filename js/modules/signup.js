@@ -48,7 +48,7 @@ $("#submit").on("click", function(){
 			success: function(resultData){
 		     result = JSON.parse(resultData);
 			 if(result.Status == 1){
-				window.location = "login.php";
+				$("#errModal").show();
 			 }	 
 			 else{
 			 	$(".modal-body").html(result.Status);

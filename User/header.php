@@ -223,5 +223,56 @@ session_start();
 			<div class="clearfix"> </div>	
 		</div>
 		<!-- //header-ends -->
+ 	<!-- Main details  -->
+ 	 <div id="page-wrapper">
+        <div class="main-page">
+        	<div class="col_3">
+		        <div class="col-md-3 widget widget1">
+		            <div class="r3_counter_box">
+		               <i class="pull-left fa fa-dollar icon-rounded"></i>
+		                <div class="stats">
+		                  <h5><strong>200 Rs</strong></h5>
+		                  <span>Current Balance</span>
+		                </div>
+		            </div>
+		        </div>
 
+		       <div class="col-md-3 widget widget1">
+		            <div class="r3_counter_box">
+		                <i class="pull-left fa fa-laptop user1 icon-rounded"></i>
+		              <div class="stats">
+		                 <h5><strong>Ready</strong></h5>
+		                  <span>Take Test</span>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 widget widget1">
+		            <div class="r3_counter_box">
+		                <i class="pull-left fa fa-money user2 icon-rounded"></i>
+		                <div class="stats">
+		                  <h5><strong>Recharge</strong></h5>
+		                  <span>Account</span>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-md-3 widget widget1">
+		            <div class="r3_counter_box">
+		                <i class="pull-left fa fa-pie-chart dollar1 icon-rounded"></i>
+		                <div class="stats">
+		                  <h5><strong>Report</strong></h5>
+		                  <span>Test Result</span>
+		                </div>
+		            </div>
+		         </div>
+		        <div class="col-md-3 widget">
+		            <div class="r3_counter_box">
+		                <i class="pull-left fa fa-users dollar2 icon-rounded"></i>
+		                <div class="stats">
+		                  <h5><strong>Remark</strong></h5>
+		                  <span>Your Skills</span>
+		                </div>
+		            </div>
+		         </div>
+		        <div class="clearfix"> </div>
+		    </div>
                 

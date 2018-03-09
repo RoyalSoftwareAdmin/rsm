@@ -96,11 +96,11 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel"> Modal title</h5>       
+			        <h5 class="modal-title" id="exampleModalLabel"> Data Saved Successfully !</h5>       
 			        </button>
 			      </div>
 			      <div class="modal-body">
-			        
+			        	Please check your mail for confirmation key, Enter the same on your first time login.
 			      </div>
 				  
 			      <div class="modal-footer">
@@ -109,9 +109,6 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			    </div>
 			  </div>
 			</div>
-			<!--footer-->
-			
-	        <!--//footer-->
 		</div>
 		<div class="footer">
 			   <?php include("footer.php"); ?>
