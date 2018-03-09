@@ -169,10 +169,10 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
                                   </div> 
 									 <?php if(!$hash) { ?>
                                      <div class="form-group col-md-6">
-                                      <input name="Submit" type="submit" value="Submit" />
+                                      <input name="Submit" class="submit" type="submit" value="Submit" />
                                        </div> 
                                       <div class="form-group col-md-6">
-                                      <input name="Cancel" type="button" value="Cancel" />
+                                      <input name="Cancel" class="cancel" type="button" value="Cancel" />
                                      </div> 
                                     <?php } ?>
 										<div class="error"> </div>
