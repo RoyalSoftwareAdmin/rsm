@@ -169,10 +169,10 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
                                   </div> 
 									 <?php if(!$hash) { ?>
                                      <div class="form-group col-md-6">
-                                      <input name="Submit" type="submit" value="Submit" />
+                                      <input name="Submit" class="submit" type="submit" value="Submit" />
                                        </div> 
                                       <div class="form-group col-md-6">
-                                      <input name="Cancel" type="button" value="Cancel" />
+                                      <input name="Cancel" class="cancel" type="button" value="Cancel" />
                                      </div> 
                                     <?php } ?>
 										<div class="error"> </div>
@@ -208,21 +208,14 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
 	
 	
 	</div>
-<section id="footer">
-   <div class="container">
-    <div class="row">
+
+
 	 
-	 <div class="col-md-12">
+	 <!--footer-->
+	 <?php include("footer.php"); ?>
+	 <!--footer-->
 	 
-	 <div class="foot">
-		 <?php include("footer.php"); ?>
-	 </div>
-	 
-	</div>
-   
-   </div>	
-   </div>
-  </section>
+	
 
 <!--<script src="js/jquery-1.11.1.min.js"></script>-->
 <script src="js/bootstrap.js"></script>
