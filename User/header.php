@@ -59,17 +59,19 @@ session_start();
 	<!-- Metis Menu -->
 	<script src="js/metisMenu.min.js"></script>
 	<script src="js/custom.js"></script>
-
-	<script type="text/javascript" src="js/common/common.js"></script>
 	<link href="css/custom.css" rel="stylesheet">
-	<script src="js/pie-chart.js" type="text/javascript"></script>
 	<link href="css/owl.carousel.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/export.css" type="text/css" media="all" />
+	<script type="text/javascript" src="js/common/common.js"></script>
+	<script src="js/pie-chart.js" type="text/javascript"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/amcharts.js"></script>
 	<script src="js/serial.js"></script>
 	<script src="js/export.min.js"></script>
-	<link rel="stylesheet" href="css/export.css" type="text/css" media="all" />
 	<script src="js/light.js"></script>
+	<script type="text/javascript" src="js/modules/index.js"></script>
+	
 </head>
 <body class="cbp-spmenu-push">
 	<div class="main-content">
@@ -199,8 +201,8 @@ session_start();
 								<div class="profile_img">	
 									<span class="prfil-img"><img src="images/2.jpg" alt=""> </span> 
 									<div class="user-name">
-										<p>Admin</p>
-										<span>Administrator</span>
+										<p>User</p>
+										<span class="loggeduser"></span>
 									</div>
 									<i class="fa fa-angle-down lnr"></i>
 									<i class="fa fa-angle-up lnr"></i>

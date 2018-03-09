@@ -128,3 +128,6 @@ $(document).ready(function() {
   // 	})
 }); 
 
+$(document).ready( function(){
+	$(".loggeduser").html(JSON.parse(localStorage.getItem("session")).fname);
+})
