@@ -100,9 +100,8 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 			        </button>
 			      </div>
 			      <div class="modal-body">
-			        	Please check your mail for confirmation key, Enter the same on your first time login.
-			      </div>
-				  
+			        	Please check your mail for account confirmation link.
+			      </div>				  
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-secondary closeModal" data-dismiss="modal">Close</button>      
 			      </div>

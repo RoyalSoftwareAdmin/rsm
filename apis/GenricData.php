@@ -8,7 +8,6 @@
 			session_destroy(); //Destroy it! So we are logged out now
 			header("location: ../login.php");
 		}
-	
 
 		if($_POST["layout"] === "1001"){
 			function randomString($length = 6) {
@@ -43,10 +42,8 @@
 								</head>
 								<body>
 								  	<p>Dear '.$fname.',</p> 
-								  	Here is the activation code for your Account </br>
-								  	User Name : '.$email.' </br>
-								  	Password : Your Password </br>
-								  	Activation Key : '.$randomVar.'
+								  	<p> Click the below link to activate your account </p>
+								  	 <a href="http://www.royalsoftwaresolution.com/RoyalMaster/activate.php?mail="'.$email.'&actkey='.$randomVar.'
 								</body>
 							</html>
 				';
@@ -82,7 +79,7 @@
 			$email = $_POST["email"];
 			$password = md5($_POST["password"]);
 			
-			$query = "select l.* , u.* from rsm_login l , rsm_user u where l.userName = '".$email."' and l.Password = '".$password."' and l.userName = u.email";
+			$query = "select l.* , u.* from rsm_login l , rsm_user u where l.userName = '".$email."' and l.Password = '".$password."' and l.userName = u.email and u.status=1";
 			$res = query($query);
 			if(mysqli_num_rows($res) !== 0 ){
 				$row = $res->fetch_assoc();
