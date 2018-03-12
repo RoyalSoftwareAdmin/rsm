@@ -101,15 +101,15 @@ session_start();
               <li class="treeview">
                 <a href="#">
                 <i class="fa fa-laptop"></i>
-                <span>Technical</span>
+                <span>Skills Test</span>
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-			        <li><a href="?file=bigdata"><i class="fa fa-angle-right"></i> Bigdata and Analysis</a></li>
-			 	    <li><a href="?file=coding"><i class="fa fa-angle-right"></i> Coding and Programming</a></li>
-		        	<li><a href="?file=project"><i class="fa fa-angle-right"></i> Project Management</a></li>
-		          	<li><a href="?file=testing"><i class="fa fa-angle-right"></i> Testing </a></li>
-		          	<li><a href="?file=technical"><i class="fa fa-angle-right"></i> Technical Writing</a></li>
+			        <li><a href="?file=technical"><i class="fa fa-angle-right"></i> Technical</a></li>
+			 	    <li><a href="?file=analytical"><i class="fa fa-angle-right"></i> Analytical</a></li>
+		        	<li><a href="?file=logical"><i class="fa fa-angle-right"></i> Logical</a></li>
+		          	<li><a href="?file=aptitude"><i class="fa fa-angle-right"></i> Aptitude </a></li>
+		          	<li><a href="?file=ca"><i class="fa fa-angle-right"></i> Current Affairs</a></li>
             	</ul>
               </li>	
               <li class="treeview">

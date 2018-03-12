@@ -2,7 +2,7 @@
     <div class="col-md-12 content-top-2 card">
         <div class="agileinfo-cdr">
             <div class="card-header">
-                <h3> A communication between human and system. A software engineer does this job easier and companies expect high technical skills from candidates.</h3>
+                <h3> Analytical Skills are basic need for any startup. When a project starts, one should analyze the probablity of acheiving it in all possible solution and bring the best of it.</h3>
             </div>
         </div>
         </div>
