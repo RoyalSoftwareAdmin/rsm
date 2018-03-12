@@ -1,4 +1,5 @@
- <div class="row-one widgettable">
+<link rel="stylesheet" href="css/modules/aptitude.css">
+<div class="row-one widgettable">
     <div class="col-md-12 content-top-2 card">
         <div class="agileinfo-cdr">
             <div class="card-header">
@@ -8,4 +9,5 @@
         </div>
     </div>      
     <div class="clearfix"> </div>
-</div>  
+</div>
+<script src="js/modules/aptitude.js"></script>  

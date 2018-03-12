@@ -1,3 +1,4 @@
+ <link rel="stylesheet" href="css/modules/remarks.css">
  <div class="row-one widgettable">
     <div class="col-md-12 content-top-2 card">
         <div class="agileinfo-cdr">
@@ -9,3 +10,4 @@
     </div>      
     <div class="clearfix"> </div>
 </div>  
+<script src="js/modules/remarks.js"></script>

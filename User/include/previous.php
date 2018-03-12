@@ -1,3 +1,4 @@
+ <link rel="stylesheet" href="css/modules/previous.css">
  <div class="row-one widgettable">
     <div class="col-md-12 content-top-2 card">
         <div class="agileinfo-cdr">
@@ -8,4 +9,5 @@
         </div>
     </div>      
     <div class="clearfix"> </div>
-</div>  
+</div> 
+<script src="js/modules/previous.js"></script>   
