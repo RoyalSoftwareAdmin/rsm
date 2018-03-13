@@ -119,13 +119,13 @@ $(document).ready(function() {
 	// 	},1000);
 
  //  	}
-  // 	$(".logout").on("click", function(){
-  // 		$.ajax({
-		// 	url : "../apis/GenricData.php",
-		// 	data : {"layout" : "logout"},
-		// 	method: "POST"
-		// })
-  // 	})
+   	$(".logout").on("click", function(){
+   		$.ajax({
+		 	url : "../apis/GenricData.php",
+		 	data : {"layout" : "logout"},
+		 	method: "POST"
+		 })
+   	})
 }); 
 
 $(document).ready( function(){

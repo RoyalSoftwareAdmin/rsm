@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
 /*-- Reset Code --*/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form.profile,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
@@ -33,11 +33,11 @@ img{max-width:100%;}
 /*-- Fonts --*/
 @font-face{
 	font-family: 'Nunito-Regular';
-	src:url(../../fonts/Nunito-Regular.ttf) format('truetype');
+	src:url(../../fonts/Nunito-Regular.ttf) form.profileat('truetype');
 }
 @font-face{
 	font-family: 'Oswald-Light';
-	src:url(../../fonts/Oswald-Light.ttf) format('truetype');
+	src:url(../../fonts/Oswald-Light.ttf) form.profileat('truetype');
 }
 /*-- Fonts --*/
 
@@ -55,7 +55,7 @@ h1 {
     font-size: 35px;
 }
 
-.container {
+.container.profile {
 	width: 80%;
 	margin: 30px auto;
 }
@@ -70,13 +70,15 @@ h1 {
 	background-size: cover;
 }	
 .tabs-menu ul {
-    width: 40%;
+    width: 80%;
     padding: 30px 20px;
 }
 .tabs-menu .active a{
     color:#fe9753;
 }
-
+.nav-tabs > li{
+    width: 100%;
+}
 
 
 .tabs-menu ul li a {
@@ -112,7 +114,7 @@ a {
 .signin {
     background-color: #629aa9;
 }
-form {
+form.profile {
     width: 60%;
     padding: 40px 30px;
     margin: 0 auto;
@@ -230,7 +232,7 @@ input.pass {
         margin: 100px 0 0 0;
         font-size: 40px;
     }
-    .container {
+    .container.profile {
         width: 55%;
     }
 
@@ -241,7 +243,7 @@ input.pass {
         margin: 80px 0 0 0;
         font-size: 40px;
     }
-    .container {
+    .container.profile {
         width: 60%;
     }
 }
@@ -251,11 +253,11 @@ input.pass {
         margin: 30px 0 0 0;
         font-size: 35px;
     }
-    .container {
+    .container.profile {
         width: 70%;
     }
     .tabs-menu ul {
-        width: 35%;
+        width: 80%;
     }
 
 }
@@ -271,13 +273,13 @@ input.pass {
     h1 {
         margin: 30px 0 0 0;
     }
-    .container {
+    .container.profile {
         width: 75%;
     }
     .tabs-menu ul {
         width: 40%;
     }
-    form {
+    form.profile {
         width: 70%;
         padding: 40px 20px;
         margin: 0 auto;
@@ -300,20 +302,20 @@ input.pass {
     .tabs-menu ul {
         width: 45%;
     }
-    form {
+    form.profile {
         width: 80%;
         padding: 40px 20px;
     }
 }
 
 @media screen and (max-width:966px) {
-    .container {
+    .container.profile {
         width: 80%;
     }
     .tabs-menu ul {
         width: 45%;
     }
-    form {
+    form.profile {
         width: 80%;
         padding: 40px 10px;
     }
@@ -323,20 +325,20 @@ input.pass {
 }
 
 @media screen and (max-width:853px) {
-    .container {
+    .container.profile {
         width: 90%;
     }
 }
 
 @media screen and (max-width:800px) {
-    .container {
+    .container.profile {
         width: 90%;
     }
     .tabs-menu ul {
         width: 45%;
         padding: 30px 20px;
     }
-    form {
+    form.profile {
         width: 80%;
         padding: 40px 10px;
     }
@@ -355,7 +357,7 @@ input.pass {
     h1 {
         margin: 60px 0 0 0;
     }
-.container {
+.container.profile {
     width: 85%;
 }
 .tabs-menu {
@@ -373,7 +375,7 @@ input.pass {
 .tab-grids {
     width: 40%;
 }
-form {
+form.profile {
     width: 85%;
     padding: 30px 10px;
 }
@@ -409,7 +411,7 @@ form {
     h1 {
         margin: 40px 0 0 0;
     }
-    .container {
+    .container.profile {
         width: 85%;
     }
 }
@@ -418,13 +420,13 @@ form {
     h1 {
         margin: 40px 0 0 0;
     }
-    .container {
+    .container.profile {
         width: 95%;
     }   
 }
 
 @media screen and (max-width:640px) {
-    .container {
+    .container.profile {
         width: 70%;
     }
     .tabs-menu {
@@ -437,7 +439,7 @@ form {
     .tab-grids {
         width: 100%;
     }
-    form {
+    form.profile {
         width: 70%;
         padding: 40px 10px;
     }
@@ -471,7 +473,7 @@ form {
         margin: 40px 0;
         font-size: 30px;
     }
-    .container {
+    .container.profile {
         width: 65%;
     }
     .tabs-menu {
@@ -482,6 +484,7 @@ form {
     }
     .tabs-menu ul li a {
         padding: 15px 5px;
+        width: 100%;
     }
     .tab-grids {
         width: 100%;
@@ -507,7 +510,7 @@ form {
     h1 {
         font-size: 30px;
     }
-    .container {
+    .container.profile {
         width: 65%;
     }
     .tabs-menu ul {
@@ -515,6 +518,7 @@ form {
     }
     .tabs-menu ul li a {
         padding: 15px 5px;
+        width: 100%;
     }
     input.user {
         width: 82%;
@@ -531,10 +535,10 @@ form {
 }
 
 @media screen and (max-width:533px) {
-    .container {
+    .container.profile {
         width: 70%;
     }
-    form {
+    form.profile {
         width: 65%;
     }
     input.user {
@@ -560,34 +564,36 @@ form {
 @media screen and (max-width:480px) {
     .tabs-menu ul li a {
         padding: 12px 5px;
+        width: 100%;
     }
 	
 
 }
 
 @media screen and (max-width:414px) {
-    .container {
+    .container.profile {
     width: 85%;
 }
 .tabs-menu ul li a {
     padding: 10px 5px;
     font-size: 18px;
+    width:100%;
 }
-form {
+form.profile {
     width: 75%;
 }
 
 }
 
 @media screen and (max-width:384px) {
-    form {
+    form.profile {
         padding: 20px 10px;
     }
 }
 
 
 @media screen and (max-width:375px) {
-    .container {
+    .container.profile {
         width: 90%;
     }
     .tabs-menu ul {
@@ -595,10 +601,11 @@ form {
     }
     .tabs-menu ul li a {
         padding: 10px 5px;
+        width: 100%;
         text-indent: 5px;
         font-size: 17px;
     }
-    form {
+    form.profile {
         width: 75%;
     }
     .outline-inward {
@@ -612,7 +619,7 @@ form {
     margin: 40px 0;
 }
 
-.container {
+.container.profile {
     width: 95%;
 }
 .tabs-menu ul {
@@ -621,9 +628,10 @@ form {
 }
 .tabs-menu ul li a {
     padding: 10px 5px;
+    width: 100%;
     font-size: 18px;
 }
-form {
+form.profile {
     width: 75%;
 }
 
@@ -636,9 +644,10 @@ form {
     }
     .tabs-menu ul li a {
         padding: 9px 5px;
+        width: 100%;
         font-size: 12px;
     }
-    form {
+    form.profile {
         width: 80%;
         padding: 20px 5px;
     }

@@ -28,70 +28,24 @@ $(document).ready(function(){
 				flag = false;
 			}
 			
-			
-			
 			if(!flag){
 				$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
-			}
-			else{
-				$.ajax({
-		url : "http://royalsoftwaresolution.com/RoyalBackend/data.php",
-		data : {"layout" : 1002},
-		method : "POST",
-		success: function( result){
-		 console.log(result);
-		 if(result.Status == 1){
-			$("#userStatus").html("User is Active").css("color","#4fd84f");
-		 }	 
-			 else{
-				$("#userStatus").html("User is Inactive").css("color","#FF0000");
-
-			 }
-		},
-			
-				
-	
-	})
-	$.ajax({
-		url : "http://royalsoftwaresolution.com/RoyalBackend/data.php",
-		data : {"layout" : 1002},
-		method : "POST",
-		success: function( result){
-		 console.log(result);
-		 if(result.Status == 1){
-			$("#userStatus").html("User is Active").css("color","#4fd84f");
-		 }	 
-			 else{
-				$("#userStatus").html("User is Inactive").css("color","#FF0000");
-
-			 }
-		},
-		
-	})
-			}
+			}	
 })
-$.ajax({
-		url : "http://royalsoftwaresolution.com/RoyalBackend/data.php",
-		data : {"layout" : 1002},
-		method : "POST",
-		success: function( result){
-		 console.log(result);
-		 if(result.Status == 1){
-			$("#userStatus").html("User is Active").css("color","#4fd84f");
-		 }	 
-			 else{
-				$("#userStatus").html("User is Inactive").css("color","#FF0000");
 
-			 }
-		},
-		error : function(error) {
-					console.log(error.responseText); 
-					$(".error").show();
-				}
-				
-		
-		
-	})
+$("#tab2").hide();
+$("#tab3").hide();
+$("#tab4").hide();
+$("#tab5").hide();
+$(".tabs-menu a").click(function(event){
+	event.preventDefault();
+	
+	var tab=$(this).attr("href");
+	$(".tab-grid").not(tab).css("display","none");
+    
+	$(tab).fadeIn("slow");
+});
+
 var CountryOption = "" , StateOption = "" , bloodOption = "";
 	countryList.forEach(function(k,r){
 		CountryOption += "<option value='"+k.value+"'>"+k.name+"</option>";
