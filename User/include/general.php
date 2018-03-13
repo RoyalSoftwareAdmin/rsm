@@ -46,7 +46,7 @@
 				 </div>
 				 
 				 <div class="col-md-6">
-				 <button type="edit" class="button2">Edit</button>
+				 <a href="./../profile.php"><button type="edit" class="button2">Edit</a></button>
 				 </div>
 				</div>
 				
