@@ -1,0 +1,42 @@
+.dataheading{
+	    padding: 20px;
+		margin: auto;
+}
+.head1{
+	color: #4787ce;
+    padding: 5px 5px;
+    margin-left: 15px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.datavalue{
+	    padding: 20px;
+		margin: auto;
+}
+.head2{
+	color: #4787ce;
+    padding: 5px 5px;
+    margin-left: 15px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button1{
+	     width: 150px;
+		 height:  45px;
+		 margin: auto;
+		 font-size: 25px;
+		 color: white;
+		 background-color: #f2b33f;
+		 border-radius: 30px;
+		 border: none;
+}
+.button2{
+	     width: 150px;
+		 height:  45px;
+		 font-size: 25px;
+		 margin: auto;
+		 color: white;
+		 background-color: #f2b33f;
+		 border-radius: 30px;
+		 border: none;
+}
