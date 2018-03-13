@@ -120,6 +120,7 @@
 			$email = $_POST["email"];
 			
 			$query = "SELECT CONCAT_WS(' ', u.fname, u.lname) as Name , u.email as EMail , p.dob as DateofBirth, p.state as Location, CONCAT_WS(' ', p.college, p.department) as College_Department, p.techskills as TechnicalSkills, p.mobile as Mobile_Number , p.webbsite as Website, p.others as Others FROM rsm_profile p, rsm_user u WHERE p.userName = u.email";
+
 			$res = query($query);
 			if(mysqli_num_rows($res) !== 0 ){
 				$row = $res->fetch_assoc();
