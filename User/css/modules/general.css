@@ -30,6 +30,9 @@
 		 border-radius: 30px;
 		 border: none;
 }
+.button1:hover{
+	           color: white;
+}
 .button2{
 	     width: 150px;
 		 height:  45px;
@@ -39,4 +42,10 @@
 		 background-color: #f2b33f;
 		 border-radius: 30px;
 		 border: none;
+}
+.button2 a{
+	      color: white;
+}
+.button2:hover{
+	           color: white;
 }
