@@ -40,7 +40,7 @@
 							      	<input type="text" class="pass zipp" id="zip" maxlength="6"class="pn" />
 									<div class="error"></div>
 									<a href="#tab2" class="button outline-inward submit" id="submit">NEXT</a>
-							 	</form class="profile">
+							 	</form>
 							</div>
 						</div>
 						<div id="tab2" class="tab-grid">
@@ -56,7 +56,7 @@
 							      	<input type="text" class="pass usnn" id="ids"  />
 									<div class="error"></div>
 									<a href="#tab3" class="button outline-inward" id="submit0">NEXT</a>
-							 	</form class="profile">
+							 	</form>
 								
 							</div>
 						</div>
@@ -65,10 +65,8 @@
 						     	<form class="profile">
 								<textarea rows="11" class="comment">
 					                 </textarea>
-						     		
-							      
-									<a href="#tab4" class="button outline-inward submit">NEXT</a>
-							 	</form class="profile">
+						     		<a href="#tab4" class="button outline-inward submit">NEXT</a>
+							 	</form>
 							</div>
 						</div>
 						<div id="tab4" class="tab-grid">
@@ -85,7 +83,7 @@
 							      	<input type="password" class="pass web"  />
 									<div class="error"></div>
 									<a href="#tab5" class="button outline-inward submit" id="submit1">NEXT</a>
-							 	</form class="profile">
+							 	</form>
 							</div>
 						</div>
 						<div id="tab5" class="tab-grid">
@@ -100,7 +98,7 @@
 							      	<textarea  rows="7" col="5" class="comment">
 					                 </textarea></p>					 
 									<a href="#tab1" class="button outline-inward in submit">SUBMIT</a>
-							 	</form class="profile">
+							 	</form>
 							</div>
 						</div>
 
@@ -109,8 +107,6 @@
 					<div class="clear"> </div>
 
 				</div>
-
-
 				    <!--//footer-->
 				</div>
             </div>
