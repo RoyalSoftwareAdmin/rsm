@@ -14,7 +14,7 @@ $(document).ready(function(){
 				$("#tech").html(result.TechnicalSkills == "" ? "N/A" : result.TechnicalSkills);
 				$("#mobnum").html(result.Mobile_Number == "" ? "N/A" : result.Mobile_Number);
 				$("#Web").html(result.Website == "" ? "N/A" : result.Website);
-				$("#other").html(result.Others == "" ? "N/A" : result.Others);
+				$("#others").html(result.Others == "" ? "N/A" : result.Others);
 		 		console.log(result);
 		 	},
 		 	error : function(result){
