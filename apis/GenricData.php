@@ -58,7 +58,7 @@
 
 				// Mail it				
 		
-		$query = "INSERT INTO rsm_user(fname, lname, email, password, status, gender, value, ActiveKey) VALUES ('".$fname."' ,'".$lname."' ,'".$mail."' ,'". $password."' ,'". $status."' ,'". $gender."',64,'".$randomVar."')";
+		$query = "INSERT INTO rsm_user(fname, lname, email, password, status, gender, value, ActiveKey) VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $password."' ,'". $status."' ,'". $gender."',64,'".$randomVar."')";
 			$res = query($query);
 			if($res){
 

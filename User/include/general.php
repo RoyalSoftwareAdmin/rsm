@@ -9,33 +9,151 @@
 				<div class="container">
 				<div class="row">
 				 
-				 <div class="col-md-6">
-				  <div class="dataheading">
-				    <h3 class="head1">Name</h3>
-					<h3 class="head1">Email</h3>
-					<h3 class="head1">Date of Birth</h3>
-					<h3 class="head1">Location</h3>
-					<h3 class="head1">College/Dept</h3>
-					<h3 class="head1">Technical Skills</h3>
-					<h3 class="head1">Mobile Number</h3>
-					<h3 class="head1">Website</h3>
-					<h3 class="head1"> Other Details</h3>
-				  </div>
-				 </div>
-				 
-				 <div class="col-md-6">
-				  <div class="datavalue">
-				   <h3 class="head2" id="name"></h3>
-				   <h3 class="head2" id="email"></h3>
-				   <h3 class="head2" id="dob"></h3>
-				   <h3 class="head2" id="loc"></h3>
-				   <h3 class="head2" id="col"></h3>
-				   <h3 class="head2" id="tech"></h3>
-				   <h3 class="head2" id="mobnum"></h3>
-				   <h3 class="head2" id="Web"></h3>
-				   <h3 class="head2" id="other"></h3>
-				  </div>
-				 </div>
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>Name</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="name"></label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>Email</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="email"></label>
+                 </div>
+				</div>
+				</div>
+				
+				
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>Date Of Birth</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="dob"></label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>Location</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="loc"></label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>College/Dept</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="col"></label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>Technical Skills</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="tech"></label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>Mobile Number</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="mobnum"></label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>Website</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="Web"></label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="dataheading">
+				 <div class="head1 form-control">
+                  <label>Other Details</label>
+                 </div>
+				</div>
+				</div>
+				
+				<div class="col-md-6"> 
+				<div class="datavalue">
+				 <div class="head2 form-control">
+                  <label id="others"></label>
+                 </div>
+				</div>
+				</div>
+				
 				
 				</div>
 				
