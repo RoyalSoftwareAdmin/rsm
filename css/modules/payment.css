@@ -34,7 +34,7 @@ img{max-width:100%;}
 
 /*-- main-content --*/
 body {
-    background:#9C27B0;
+    background:#0099c1;
     background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -54,7 +54,7 @@ ul,label{
 }
 body a:hover, body a {
     text-decoration: none;
-    color: #FF7416;
+    color: #27b399;
 	 -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -71,9 +71,9 @@ body a:hover, body a {
 .nl-accordion label.nl-label {
     display: block;
     font-size: 1.3em;
-    background: #fff;
+    background: #27b399;
     border-top: none;
-    color: #000;
+    color: #FFF;
     font-weight: 600;
     cursor: pointer;
     text-transform: uppercase;
@@ -93,7 +93,7 @@ body a:hover, body a {
   display:none;
 }
 .nl-accordion > ul li label.nl-label:hover, .nl-accordion [type="radio"].nl-radio:checked ~ label.nl-label, .nl-accordion [type="checkbox"].nl-checkbox:checked ~ label.nl-label {
-  background:#FF7416;
+  background:#27b399;
   color:#FFF;
   -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -119,13 +119,17 @@ body a:hover, body a {
 	overflow:auto;
 }
 /*-- //tabs --*/
+.main{
+	margin: 20px;
+}
 .main h1{
 	text-align: center;
     color: #fff;
     font-size:3em;
     text-transform: uppercase;
     letter-spacing: 4px;
-	margin:1em 0 .7em;
+	margin: auto;
+	padding: 20px;
 }
 .controls {
     text-align: left;
@@ -133,8 +137,9 @@ body a:hover, body a {
 	font-size:14px;
 }
 .control-label{
-	           color: #ccc;
-			   padding: 1em;
+	color: #0099c1;
+    padding: 1em;
+    font-size: 16px;
 }
 .control1{
 	       display: inline-block;
@@ -143,36 +148,31 @@ select{
 	 background-color: #9C27B0;
 	 color: #fff;
 }
-.nl-content{
-	background: url(../../images/5.jpg)no-repeat center;
-	background-size:cover;
-}
-.agileits_w3layouts_tab {
+
+.agileits_roayls_tab {
     padding:3em;
 }
-.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
+.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
     display: block;
     width: 94.8%;
     padding: 1em 1em;
     font-size: 1em;
-    color: #fff;
     background: rgba(0, 255, 0,0);
-    border: 1px solid #fff;
     outline: none;
     border-bottom: 1px solid #fff;
 }
-.agileits_w3layouts_tab2 input[type="email"]:focus,.agileits_w3layouts_tab2 input[type="password"]:focus,.creditly-wrapper .form-control:focus {
+.agileits_roayls_tab2 input[type="email"]:focus,.agileits_roayls_tab2 input[type="password"]:focus,.creditly-wrapper .form-control:focus {
   border-color: #66afe9;
   outline: 0;
 }
-.w3_agileits_card_number_grid_right {
+.royals_agileits_card_number_grid_right {
     float: right !important;
 }
-.w3_agileits_card_number_grid_left, .w3_agileits_card_number_grid_right {
+.royals_agileits_card_number_grid_left, .royals_agileits_card_number_grid_right {
     float: left;
     width: 48%;
 }
-.agileits_w3layouts_tab2.agileits_w3layouts_tab h3 {
+.agileits_roayls_tab2.agileits_roayls_tab h3 {
     font-size: 1.2em;
     margin-bottom: 2em;
     color: #fff;
@@ -180,11 +180,11 @@ select{
 .security-code, .date{
     width: 89% !important;
 }
-.agileits_w3layouts_tab2 input[type="submit"] {
+.agileits_roayls_tab2 input[type="submit"] ,.agileits_roayls_tab2 input[type="cancel"] {
     position: relative;
     padding: .7em 3em;
     letter-spacing: 1px;
-    background:#FF7416;
+    background:#27b399;
     font-size: 1.2em;
     color: #fff;
     border: none;
@@ -198,7 +198,7 @@ select{
     -ms-transition: 0.5s all;
 	transition: 0.5s all;
 }
-input[type="submit"],[type="button"]{
+input[type="submit"],input[type="cancel"],[type="button"]{
 	               font-size: 18px;
 				   color: black;
 				   width: 50%;
@@ -206,16 +206,18 @@ input[type="submit"],[type="button"]{
 				   border-radius: 50px;
 				   padding: 10px;
 				   border: none;
+				   color:#FFF;
+				   background-color: #0099c1;
 }
-input[type="submit"]:hover{
-	background: #ff7416;
+input[type="submit"]:hover , input[type="cancel"]:hover{
+	background: #27b399;
     color: #fff;
 }
-input[type="button"]:hover{
-	background: #ff7416;
+input[type="button"]:hover , input[type="cancel"]:hover{
+	background: #27b399;
     color: #fff;
 }
-.agileits_w3layouts_tab2.agileits_w3layouts_tab input[type="email"] {
+.agileits_roayls_tab2.agileits_roayls_tab input[type="email"] {
     margin-bottom: 2em;
 }
 /*--placeholder-color--*/
@@ -248,15 +250,17 @@ input[type="button"]:hover{
 }
 .agileits_copyright p a {
     font-weight: 600;
-}
+}	
 .agileits_copyright p a:hover {
     color:#fff;
 }
 /*-- //copyright --*/
 /*--responsive--*/
 @media(max-width: 1440px){
-	.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
-		width: 94%;
+	.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
+		width: 65%;
+		float: right;
+    	border: 1px solid #CCC !important;
 	}
 	.security-code, .date {
 		width: 87.5% !important;
@@ -267,7 +271,7 @@ input[type="button"]:hover{
 		font-size: 2.8em;
 	}
 	.nl-accordion {
-		width: 44%;
+		width: 80%;
 	}
 }
 @media(max-width: 1280px){
@@ -282,23 +286,23 @@ input[type="button"]:hover{
 	.nl-accordion {
 		width: 50%;
 	}
-	.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
+	.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
 		width: 93.5%;
 	}
 }
 @media(max-width: 1024px){
 	.nl-accordion {
-		width: 55%;
+		width: 100%;
 	}
 }
 @media(max-width: 991px){
 	.nl-accordion {
-		width: 57%;
+		width: 100%;
 	}
 }
 @media(max-width: 800px){
 	.nl-accordion {
-		width: 66%;
+		width: 100%;
 	}
 }
 @media(max-width: 768px){
@@ -309,7 +313,7 @@ input[type="button"]:hover{
 		margin: 1.5em 0 1em;
 	}
 	.nl-accordion {
-		width: 69%;
+		width: 100%;
 	}
 }
 @media(max-width: 736px){
@@ -319,7 +323,7 @@ input[type="button"]:hover{
 		letter-spacing: 2px;
 	}
 	.nl-accordion {
-		width: 73%;
+		width: 100%;
 	}
 	.agileits_copyright {
 		margin: 2em 0;
@@ -330,7 +334,7 @@ input[type="button"]:hover{
 		font-size: 2.2em;
 	}
 	.nl-accordion {
-		width: 79%;
+		width:100%;
 	}
 	.security-code, .date {
 		width: 86% !important;
@@ -348,7 +352,7 @@ input[type="button"]:hover{
 	.nl-accordion {
 		width: 85%;
 	}
-	.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
+	.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
 		width: 93%;
 	}
 	.agileits_copyright p {
@@ -362,7 +366,7 @@ input[type="button"]:hover{
 	.nl-accordion {
 		width: 87%;
 	}
-	.agileits_w3layouts_tab {
+	.agileits_roayls_tab {
 		padding: 2.5em;
 	}
 	.security-code, .date {
@@ -378,7 +382,7 @@ input[type="button"]:hover{
 	.nl-accordion {
 		width: 92%;
 	}
-	.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
+	.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
 		width: 92%;
 		padding: 0.8em 1em;
 	}
@@ -402,10 +406,10 @@ input[type="button"]:hover{
 	.nl-accordion label.nl-label {
 		font-size: 1.2em;
 	}
-	.agileits_w3layouts_tab {
+	.agileits_roayls_tab {
 		padding: 2em;
 	}
-	.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
+	.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
 		width: 91.5%;
 		font-size: 0.9em;
 	}
@@ -415,19 +419,19 @@ input[type="button"]:hover{
 	.nl-accordion [type="checkbox"].nl-checkbox:checked ~ label.nl-label ~ .nl-content, .nl-accordion [type="radio"].nl-radio:checked ~ label.nl-label ~ .nl-content {
 		height: 400px;
 	}
-	.agileits_w3layouts_tab2 input[type="submit"] {
+	.agileits_roayls_tab2 input[type="submit"] , .agileits_roayls_tab2 input[type="cancel"] {
 		font-size: 1.1em;
 	}
 }
 @media(max-width: 384px){
-	.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
+	.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
 		width: 91%;
 	}
-	.agileits_w3layouts_tab2 input[type="submit"] {
+	.agileits_roayls_tab2 input[type="submit"] , .agileits_roayls_tab2 input[type="cancel"] {
 		font-size: 1em;
 		margin-top: 3em;
 	}
-	.agileits_w3layouts_tab2.agileits_w3layouts_tab h3 {
+	.agileits_roayls_tab2.agileits_roayls_tab h3 {
 		font-size: 1em;
 	}
 }
@@ -435,7 +439,7 @@ input[type="button"]:hover{
 	.main h1 {
 		font-size: 1.6em;
 	}
-	.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
+	.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
 		width: 90%;
 	}
 	.security-code, .date {
@@ -447,16 +451,16 @@ input[type="button"]:hover{
 		font-size: 1.5em;
 		letter-spacing: 0px;
 	}
-	.agileits_w3layouts_tab {
+	.agileits_roayls_tab {
 		padding: 1.5em;
 	}
-	.agileits_w3layouts_tab2 input[type="email"], .agileits_w3layouts_tab2 input[type="password"], .creditly-wrapper .form-control {
+	.agileits_roayls_tab2 input[type="email"], .agileits_roayls_tab2 input[type="password"], .creditly-wrapper .form-control {
 		padding: 0.8em;
 	}
 	.nl-accordion [type="checkbox"].nl-checkbox:checked ~ label.nl-label ~ .nl-content, .nl-accordion [type="radio"].nl-radio:checked ~ label.nl-label ~ .nl-content {
 		height: 380px;
 	}
-	.w3_agileits_card_number_grid_left, .w3_agileits_card_number_grid_right {
+	.royals_agileits_card_number_grid_left, .royals_agileits_card_number_grid_right {
 		width: 49%;
 	}
 	.agileits_copyright p {
