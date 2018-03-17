@@ -18,7 +18,7 @@
 					<body>
 					  	<p>Dear User,</p> 
 					  	<p> Your Account is activated now , Start finding your skills</p>
-					  	 <a href="http://www.royalsoftwaresolution.com/RoyalMaster/> Royal Skills Master</a>
+					  	 <a href="http://www.royalsoftwaresolution.com/RoyalMaster/"> Royal Skills Master</a>
 					</body>
 				</html>';
 	// To send HTML mail, the Content-type header must be set

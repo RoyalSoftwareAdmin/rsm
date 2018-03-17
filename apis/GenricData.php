@@ -63,13 +63,20 @@
 			if($res){
 
 				mail($to, $subject, $message, implode("\r\n", $headers));
-				$query = "INSERT INTO rsm_login(userName, Password, value) VALUES ('".$email."' ,'".$password."', 3)";
+				$query = "INSERT INTO rsm_profile(userName) VALUES ('".$email."')";
 				$res = query($query);
+				if($res){
+					$query = "INSERT INTO rsm_login(userName, Password, value) VALUES ('".$email."' ,'".$password."', 3)";
+					$res = query($query);
 					if($res){
 						echo json_encode(array('Status' => "1" ));
 					}else{
 						echo json_encode(array('Status' => mysqli_error($conn)));
 					}
+				}else{
+					echo json_encode(array('Status' => mysqli_error($conn)));
+				}
+				
 			}else{
 				echo json_encode(array('Status' => mysqli_error($conn)));
 			}
@@ -100,6 +107,7 @@
 			$zip = $_POST["zip"];
 			$college = $_POST["college"];
 			$department = $_POST["department"];
+			$id = $_POST["id"];
 			$blood = $_POST["blood"];
 			$techskills = $_POST["id"];
 			$mobile = $_POST["mobile"];
@@ -107,7 +115,7 @@
 			$webbsite = $_POST["webbsite"];
 			$others = $_POST['others'];
 			
-			$query = "INSERT INTO rsm_profile (userName, dob, country, state, zip, college, department, blood, id, techskills, mobile, office, webbsite,others) VALUES ('".$userName."','".$dob."','".$country."','".$state."','".$zip."','".$college."','".$department."','".$blood."','".$techskills."','".$mobile."','".$office."','".$webbsite."','".$others."')";
+			$query = "update rsm_profile set dob='".$dob."', country = '".$country."', state='".$state."', zip='".$zip."', college='".$college."', department='".$department."', blood='".$blood."', id='".$id."', techskills='".$techskills."', mobile='".$mobile."', office='".$office."', webbsite='".$webbsite."',others='".$others."' where userName='".$userName."'";
 			$res = query($query);
 				if($res){
 					echo json_encode(array('Status' => "1" ));
@@ -119,8 +127,7 @@
 		if($_POST["layout"] == "1004"){
 			$email = $_POST["email"];
 			
-			$query = "SELECT CONCAT_WS(' ', u.fname, u.lname) as Name , u.email as EMail , p.dob as DateofBirth, p.state as Location, CONCAT_WS(' ', p.college, p.department) as College_Department, p.techskills as TechnicalSkills, p.mobile as Mobile_Number , p.webbsite as Website, p.others as Others FROM rsm_profile p, rsm_user u WHERE p.userName = u.email";
-
+			$query = "SELECT CONCAT_WS(' ', u.fname, u.lname) as Name , u.email as EMail , p.dob as DateofBirth, p.state as Location, CONCAT_WS(' ', p.college, p.department) as College_Department, p.techskills as TechnicalSkills, p.mobile as Mobile_Number , p.webbsite as Website, p.others as Others FROM rsm_profile p, rsm_user u WHERE p.userName='".$email."' and p.userName = u.email";
 			$res = query($query);
 			if(mysqli_num_rows($res) !== 0 ){
 				$row = $res->fetch_assoc();
