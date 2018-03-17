@@ -40,14 +40,13 @@
 				</div>
 				
 				<div class="row">
-				 
-				 <div class="col-md-6">
-				 <center><button type="save" class="button1">Save</button></center>
-				 </div>
-				 
-				 <div class="col-md-6">
-				 <a href="./../profile.php"><button type="edit" class="button2">Edit</a></button>
-				 </div>
+					 <div class="col-md-6">
+					 <center><button type="save" class="button1">Save</button></center>
+					 </div>
+					 
+					 <div class="col-md-6">
+					 <button type="edit" class="button2"><a href="?file=profile">Edit</a></button>
+					 </div>
 				</div>
 				
                 </div>
@@ -57,5 +56,4 @@
         </div>
     </div>      
     <div class="clearfix"> </div>
-</div>
 <script src="js/modules/general.js">  

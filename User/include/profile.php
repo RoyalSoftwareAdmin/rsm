@@ -72,7 +72,6 @@
 						<div id="tab4" class="tab-grid">
 							<div class="signin">
 						     	<form class="profile2">
-
 						     		<p>Personal mobile</p>
 							      	<input type="text" class="user mob" id="mobile" maxlength="10" />
 						     		<p>Office Number</p>
@@ -89,14 +88,12 @@
 						<div id="tab5" class="tab-grid">
 							<div class="signin">
 						     	<form class="profile2">
-						     		<p>Resume
-							      	<input type="file" class="f1"></input><p>
-						     		<p class="p1">Cover Letter <input type="file" class="f1"></input></p>
-							      	
+						     		<p> Resume 	<input type="file" class="f1"/><p>
+						     		<p class="p1">Cover Letter <input type="file" class="f1"/></p>
 							      	
 							      	<p class="tet">Other Details
-							      	<textarea  rows="7" col="5" class="comment">
-					                 </textarea></p>					 
+							      		<textarea  rows="7" col="5" class="comment">      </textarea>
+							      	</p>					 
 									<a href="#tab1" class="button outline-inward in submit">SUBMIT</a>
 							 	</form>
 							</div>
@@ -114,6 +111,5 @@
         </div>
     </div>      
     <div class="clearfix"> </div>
-</div>
 <script type="text/javascript" src="js/common/lists.js"></script>
 <script src="js/modules/profile.js">  
