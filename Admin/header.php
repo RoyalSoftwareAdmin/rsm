@@ -96,9 +96,18 @@ session_start();
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
               </li>	
-
-
               <li class="treeview">
+                <a href="?file=addUser">
+                <i class="fa fa-user"></i> <span>Add User</span>
+                </a>
+              </li>	
+              <li class="treeview">
+                <a href="?file=uploadDocs">
+                <i class="fa fa-file"></i> <span>Upload Docs</span>
+                </a>
+              </li>	
+
+             <!--  <li class="treeview">
                 <a href="#">
                 <i class="fa fa-laptop"></i>
                 <span>Skills Test</span>
@@ -157,7 +166,7 @@ session_start();
                   <li><a target="_blank" href="http://www.saleinmysore.com/"><i class="fa fa-angle-right"></i> Sale in Mysore</a></li>
                   <li><a target="_blank" href="http://www.mysoreshoppy.com/"><i class="fa fa-angle-right"></i> Mysore shoppy</a></li>
                    </ul>
-              </li>	
+              </li>	 -->
 
             </ul>
           </div>

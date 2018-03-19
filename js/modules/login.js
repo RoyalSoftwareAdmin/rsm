@@ -26,7 +26,7 @@ $("#submit").on("click", function(){
 				if(result.UserStatus == 1){
 					_session = result;
 					localStorage.setItem("session", JSON.stringify(_session));
-					if(result.value == 258){
+					if(result.value == 256){
 						window.location = "Admin/index.php";
 					}
 					else if(result.value == 126){
