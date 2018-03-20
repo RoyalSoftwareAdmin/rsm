@@ -15,10 +15,22 @@ $('#my-field1').bind('keypress', testInput);
   
 
 var error = "";
+  var zip = $("#zip").val(),
+		  userName = $("#userName").val(),
+		  dob = $("#dob").val(),
+		  country = $("#country").val(),
+		  state = $("#state").val(),
+		  college = $("#college").val(),
+		  department = $("department").val(),
+		  blood = $("#blood").val(),
+		  num = $("#mobile").val(),
+		  office = $("#office").val(),
+		 webbsite = $("webbsite").val(),
+		  others = $("#others").val(),
 $(document).ready(function(){
 	$("#submit").on("click", function(){
 		$(".error").html("");
-		 var number = $("#zip").val(),
+		var number = $("#zip").val(),
 		      userstatus = 1;
 			  
 			flag = true;
@@ -116,8 +128,23 @@ $(document).ready(function(){
 			}
 	})
 })
+     var email = JSON.parse(localStorage.getItem("session")).email;
 
+    $("#save").on("click", function(){
+    	$.ajax({
+    		url	: "../../apis/GenricData.php",
+    		type: "JSON",
+    		method:"POST",
+    		data : { "layout" : "1003" , "userName":userName , "dob":dob , "country":country , 
+    		"state": state , "zip":zip , "college":college , "department":department , "blood":blood ,
+    	     "mobile":mobile , "office":office , "webbsite":webbsite , "others" :others},
+    		success: function(result){
 
+    		},
+    		error: function(error){
 
+    		}
+    	})
+    })
 
     
