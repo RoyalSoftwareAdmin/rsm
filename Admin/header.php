@@ -102,10 +102,11 @@ session_start();
                 </a>
               </li>	
               <li class="treeview">
-                <a href="?file=uploadDocs">
+                <a href="?file=index">
                 <i class="fa fa-file"></i> <span>Upload Docs</span>
                 </a>
               </li>	
+              
 
              <!--  <li class="treeview">
                 <a href="#">
