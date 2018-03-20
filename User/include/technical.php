@@ -3,7 +3,53 @@
     <div class="col-md-12 content-top-2 card">
         <div class="agileinfo-cdr">
             <div class="card-header">
-                <h3>Lots of companies, from construction to software, are looking for full-time content creators that can develop user guides and knowledge bases on different subjects. So techwriters are in demand almost everywhere.</h3>
+               <div class="container technical">
+               	<div class="row">
+               		
+               	 <div class="col-md-4">
+               	 	
+               		 <a href="#"><h4 class="spor">Web Developer</h4></a>
+               	
+               </div>
+               		<div class="col-md-4">
+               			<a href="#"><h4 class="spor">Backend Developr</h4></a>
+               	</div>
+               		<div class="col-md-4">
+               			<a href="#"><h4 class="spor">System Analyst</h4></a>
+               		</div>
+               	</div>
+               	</div>
+               
+               
+                 <div class="container technical">
+               	<div class="row">
+               		
+               	<div class="col-md-4">
+               		<a href="#"><h4 class="spor">Bussiness Analyst</h4></a>
+               	</div>
+               		<div class="col-md-4">
+               			<a href="#"><h4 class="spor">Technical Support</h4></a>
+               	</div>
+               		<div class="col-md-4">
+               			<a href="#"><h4 class="spor">Network Engineer</h4></a>
+               		</div>
+               	</div>
+               	</div>
+               
+               <div class="container technical">
+               	<div class="row">
+               	<div class="col-md-4">
+               		<a href="#"><h4 class="spor">Technical Sales</h4></a>
+               	</div>
+               		<div class="col-md-4">
+               			<a href="#"><h4 class="spor">Software Tester</h4></a>
+               	</div>
+               		<div class="col-md-4">
+               			<a href="#"><h4 class="spor">Technical Writer</h4></a>
+               		</div>
+               	</div>
+               </div>
+               
             </div>
         </div>
         </div>
