@@ -94,7 +94,7 @@
 							      	<p class="tet">Other Details
 							      		<textarea  rows="7" col="5" class="comment">      </textarea>
 							      	</p>					 
-									<a href="#tab1" class="button outline-inward in submit">SUBMIT</a>
+									<a  id="save" href="#tab1" class="button outline-inward in submit">SUBMIT</a>
 							 	</form>
 							</div>
 						</div>
