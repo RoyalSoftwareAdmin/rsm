@@ -1,0 +1,65 @@
+.container{
+	       max-width: 100%;
+		   padding: 20px;
+		   height: auto;
+}
+.comm{
+	    color: #0099c1;
+	    max-width: 100%;
+	    min-width: 250px;
+		padding: 20px;
+		margin: auto;
+		border: 5px solid #f1f1f1;
+		border-radius: 24px;
+		font-size: 22px;
+		text-align: center;
+		background: transparent;
+}
+.creativity{
+	    color: #0099c1;
+	    max-width: 100%;
+	    min-width: 250px;
+		padding: 20px;
+		margin: auto;
+		border: 5px solid #f1f1f1;
+		border-radius: 24px;
+		font-size: 22px;
+		text-align: center;
+		background: transparent;
+}
+.critical{
+	    color: #0099c1;
+	    max-width: 100%;
+	    min-width: 250px;
+		padding: 20px;
+		margin: auto;
+		border: 5px solid #f1f1f1;
+		border-radius: 24px;
+		font-size: 22px;
+		text-align: center;
+		background: transparent;
+}
+.dataanalysis{
+	    color: #0099c1;
+	    max-width: 100%;
+	    min-width: 250px;
+		padding: 20px;
+		margin: auto;
+		border: 5px solid #f1f1f1;
+		border-radius: 24px;
+		font-size: 22px;
+		text-align: center;
+		background: transparent;
+}
+.research{
+        color: #0099c1;
+	    max-width: 100%;
+	    min-width: 250px;
+		padding: 20px;
+		margin: auto;
+		border: 5px solid #f1f1f1;
+		border-radius: 24px;
+		font-size: 22px;
+		text-align: center;
+		background: transparent;
+}
