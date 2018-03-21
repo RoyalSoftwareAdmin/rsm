@@ -45,7 +45,7 @@ $("#submit").on("click", function(){
        }
    else{
 		$.ajax({
-			url : "apis/AdminData.php",
+			url : "../apis/AdminData.php",
 			data : {"layout" : 1001, "fname" :name ,"lname":lname, "email": email, "password" : password , "mobile" : mobile},
 			method : "POST",
 			success: function(resultData){
@@ -53,15 +53,15 @@ $("#submit").on("click", function(){
 			 if(result.Status == 1){
 				$("#errModal").show();
 			 }	 
-			 else{
+			 /*else{
 			 	$(".modal-body").html(result.Status);
 				$("#errModal").show();
-				 }
+				 }*/
 			},
 			error : function(error) {
-				console.log(error.responseText);
-				$(".modal-body").html(error.responseText);
-				$("#errModal").show();
+				console.log(error);
+				/*$(".modal-body").html(error.responseText);
+				$("#errModal").show();*/
 			}
 			
 			
@@ -70,11 +70,11 @@ $("#submit").on("click", function(){
 })
 			
 
-$(document).ready(function(){
+/*$(document).ready(function(){
 	$(".closeModal").on("click", function(){
 		$("#errModal").hide(); 
 	})
-})
+})*/
 
 var isalpha = function (val){
 	if(val != "" || val != undefined){
