@@ -14,10 +14,9 @@
 			$email = $_POST["email"];
 			$mobile = $_POST["mobile"];
 			$password = md5($_POST["password"]);
-			$gender = $_POST["gender"];
 			$status = 1;			
 				
-		$query = "INSERT INTO rsm_user(fname, lname, email, password, status, gender, value, ActiveKey) VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $password."' ,'". $status."' ,'". $gender."', 128 ,'Royals')";
+		$query = "INSERT INTO `rsm_company`(`fname`, `lname`, `email`, `mobile`, `password`, `status`, `value`)VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $mobile."' ,'". $status."' , 128 )";
 			$res = query($query);
 			if($res){				
 				$query = "INSERT INTO rsm_profile(userName) VALUES ('".$email."')";
