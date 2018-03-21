@@ -4,7 +4,7 @@
         <div class="agileinfo-cdr">
             <div class="card-header">
                 <div class="main-page signup-page">
-					<h2 class="title1">SignUp Here</h2>
+					<h2 class="title1">Add User</h2>
 					<div class="sign-up-row widget-shadow">
 						<h5>Personal Information :</h5>
 						<div class="sign-u">
