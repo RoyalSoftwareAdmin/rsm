@@ -48,7 +48,7 @@ var ispass = function(val){
 
 var uid = function(val){
 	if(val != "" || val != undefined){
-		var pattern = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{8,100}$/;
+		var pattern = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{3,100}$/;
 		var res = (val.match(pattern)) ?  true : false;
 		return res;
 	}

@@ -115,6 +115,7 @@ h1 {
 }
 .profile .signin {
     background-color: #629aa9;
+    min-height: 441px;
 }
 form.profile {
 
@@ -135,8 +136,7 @@ form.profile2 {
     margin: 0 auto;
 }
 
-p {
-    color: #EEE;
+p {    
     font-family: Oswald-Light;
     font-size: 17px;
 }
@@ -181,17 +181,17 @@ input.pass {
 }
 
 .outline-inward {
-    display: inline-block;
-    position: relative;
-    background-color: #EEE;
-    color: #791653;
-    width: 50%;
-    text-align: center;
-    padding: 4px 0;
-    font-family: Nunito-Regular;
-    font-size: 20px;
-    margin: 17px 0 0;
-    margin-left: 27%;
+    display: inline-block !important;
+    position: relative !important;
+    background-color: #EEE !important;
+    color: #791653 !important;
+    width: 50% !important;
+    text-align: center !important;
+    padding: 4px 0 !important;
+    font-family: Nunito-Regular !important;
+    font-size: 20px !important;
+    margin: 17px 0 0 !important;
+    margin-left: 27% !important;
 }
 .outline-inward:before {
   content: '';
@@ -688,14 +688,14 @@ form.profile {
 }
 
 .profile .btn{
-	margin-left:15px;
-	padding:10px;
-	margin:10px;
-	width:50%;
+	margin-left:15px !important;
+	padding:10px !important;
+	margin:10px !important;
+	width:50% !important;
 }
 .profile .btn1{
-	width:50%;
-	padding:10px;
+	width:50% !important;
+	padding:10px !important;
 }
 
  .profile select{
