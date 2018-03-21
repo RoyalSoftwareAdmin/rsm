@@ -31,7 +31,7 @@
 							<div class="signin">
 						     	<form class="profile">
 						     		<p>Date of Birth</p>
-							      	<input type="date" class="user"  />
+							      	<input type="date" class="user"  id="dob"/>
 						     		<p>Country</p>
 							      	<select id="countryList"> </select>
 							      	<p>State</p>
@@ -39,7 +39,7 @@
 							      	<p>Zip</p>
 							      	<input type="text" class="pass zipp" id="zip" maxlength="6"class="pn" />
 									<div class="error"></div>
-									<a href="#tab2" class="button outline-inward submit" id="submit">NEXT</a>
+									<a href="#tab2" class="button outline-inward submit" id="personal">NEXT</a>
 							 	</form>
 							</div>
 						</div>
@@ -47,15 +47,15 @@
 							<div class="signin">
 						     	<form class="profile1">
 						     		<p >Organization</p>
-							      	<input id="my-field" type="text" class="user col" >
+							      	<input id="organization" type="text" class="user col" >
 						     		<p>Department</p>
-							      	<input id="my-field1" type="text" class="user col" >
+							      	<input id="department" type="text" class="user col" >
 							      	<p>Blood Group</p>
 				                      <select id="bloodList"> </select>
 							      	<p>ID</p>
 							      	<input type="text" class="pass usnn" id="ids"  />
 									<div class="error"></div>
-									<a href="#tab3" class="button outline-inward" id="submit0">NEXT</a>
+									<a href="#tab3" class="button outline-inward" id="education">NEXT</a>
 							 	</form>
 								
 							</div>
@@ -63,9 +63,8 @@
 						<div id="tab3" class="tab-grid">
 							<div class="signin pp">
 						     	<form class="profile">
-								<textarea rows="11" class="comment">
-					                 </textarea>
-						     		<a href="#tab4" class="button outline-inward submit">NEXT</a>
+								<textarea rows="11" class="comment technicalData"></textarea>
+						     		<a href="#tab4" id="technical" class="button outline-inward submit">NEXT</a>
 							 	</form>
 							</div>
 						</div>
@@ -75,13 +74,11 @@
 						     		<p>Personal mobile</p>
 							      	<input type="text" class="user mob" id="mobile" maxlength="10" />
 						     		<p>Office Number</p>
-							      	<input type="text" class="mail mal" />
-							      	<p>Email</p>
-							      	<input type="text" class="pass" id="email"  />
-							      	<p>Website</p>
-							      	<input type="password" class="pass web"  />
+							      	<input type="text" id="office" class="mail mal" />
+							       	<p>Website</p>
+							      	<input type="text" id="website" class="pass web"  />
 									<div class="error"></div>
-									<a href="#tab5" class="button outline-inward submit" id="submit1">NEXT</a>
+									<a href="#tab5" class="button outline-inward submit" id="contact">NEXT</a>
 							 	</form>
 							</div>
 						</div>
@@ -92,9 +89,9 @@
 						     		<p class="p1">Cover Letter <input type="file" class="f1"/></p>
 							      	
 							      	<p class="tet">Other Details
-							      		<textarea  rows="7" col="5" class="comment">      </textarea>
+							      		<textarea  rows="7" col="5" id="others" class="comment otherDetails"> </textarea>
 							      	</p>					 
-									<a  id="save" href="#tab1" class="button outline-inward in submit">SUBMIT</a>
+									<a href="#tab1" id="submit" class="button outline-inward in submit">SUBMIT</a>
 							 	</form>
 							</div>
 						</div>

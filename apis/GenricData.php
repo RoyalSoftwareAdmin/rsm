@@ -1,6 +1,5 @@
 <?php 
 	include("config.php");
-
 	if ($_SERVER['REQUEST_METHOD'] == 'POST'){		
 		if($_POST["layout"] === "logout"){
 			session_start(); //Start the current session
@@ -105,17 +104,17 @@
 			$country = $_POST["country"];
 			$state = $_POST["state"];
 			$zip = $_POST["zip"];
-			$college = $_POST["college"];
+			$organization = $_POST["organization"];
 			$department = $_POST["department"];
 			$id = $_POST["id"];
 			$blood = $_POST["blood"];
-			$techskills = $_POST["id"];
+			$techskills = $_POST["technical"];
 			$mobile = $_POST["mobile"];
 			$office = $_POST["office"];
 			$webbsite = $_POST["webbsite"];
 			$others = $_POST['others'];
 			
-			$query = "update rsm_profile set dob='".$dob."', country = '".$country."', state='".$state."', zip='".$zip."', college='".$college."', department='".$department."', blood='".$blood."', id='".$id."', techskills='".$techskills."', mobile='".$mobile."', office='".$office."', webbsite='".$webbsite."',others='".$others."' where userName='".$userName."'";
+			$query = "update rsm_profile set dob='".$dob."', country = '".$country."', state='".$state."', zip='".$zip."', college='".$organization."', department='".$department."', blood='".$blood."', id='".$id."', techskills='".$techskills."', mobile='".$mobile."', office='".$office."', webbsite='".$webbsite."',others='".$others."' where userName='".$userName."'";
 			$res = query($query);
 				if($res){
 					echo json_encode(array('Status' => "1" ));
