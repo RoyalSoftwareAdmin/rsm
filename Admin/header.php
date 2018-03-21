@@ -35,7 +35,7 @@ session_start();
 
 	<!-- Custom CSS -->
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" href="css/modules/index.css">
+	
 	<!-- font-awesome icons CSS -->
 	<link href="css/font-awesome.css" rel="stylesheet"> 
 	<!-- //font-awesome icons CSS-->
@@ -70,7 +70,7 @@ session_start();
 	<script src="js/serial.js"></script>
 	<script src="js/export.min.js"></script>
 	<script src="js/light.js"></script>
-	<script type="text/javascript" src="js/modules/index.js"></script>
+	
 	
 </head>
 <body class="cbp-spmenu-push">
