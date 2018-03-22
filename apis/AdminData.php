@@ -17,9 +17,11 @@
 			$password = md5($_POST["password"]);
 			$status = 1;			
 				
-		$query = "INSERT INTO `rsm_company`(`fname`, `lname`, `email`, `mobile`, `password`, `status`, `value`)VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $mobile."' ,'". $password."','". $status."' , 128 )";
+		$query = "INSERT INTO rsm_company(fname, lname, email, mobile, password, status, value)VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $mobile."' ,'". $password."','". $status."' , 128 )";
 			$res = query($query);
-			if($res){				
+			if($res){		
+				$query = "INSERT INTO rsm_user(fname, lname, email, password, status, value) VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $password."' ,". $status.", 128)";
+				$res = query($query);
 				$query = "INSERT INTO rsm_profile(userName) VALUES ('".$email."')";
 				$res = query($query);
 				if($res){
