@@ -41,6 +41,17 @@
 			}
 		}
 
+		if($_POST["layout"] == "1003"){
+			$email = $_POST["email"]; //JSON.parse(localStorage.getItem("session")).email			
+		
+		$query = "select * from rsm_files where email ='".$email."'";
+			$res = query($query);
+			if($res){		
+				echo json_encode($res);
+				}else{
+					echo json_encode(array('Status' => mysqli_error($conn)));
+				}
+			}
 	}
 
 ?>

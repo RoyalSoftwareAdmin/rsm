@@ -1,43 +1,29 @@
-<?php
-include_once 'dbconfig.php';
-if(isset($_POST['btn-upload']))
-{    
-     
-	$file = rand(1000,100000)."-".$_FILES['file']['name'];
-    $file_loc = $_FILES['file']['tmp_name'];
-	$file_size = $_FILES['file']['size'];
-	$file_type = $_FILES['file']['type'];
-	$folder="uploads/";
-	
-	// new file size in KB
-	$new_size = $file_size/1024;  
-	// new file size in KB
-	
-	// make file name in lower case
-	$new_file_name = strtolower($file);
-	// make file name in lower case
-	
-	$final_file=str_replace(' ','-',$new_file_name);
-	
-	if(move_uploaded_file($file_loc,$folder.$final_file))
-	{
-		$sql="INSERT INTO tbl_uploads(file,type,size) VALUES('$final_file','$file_type','$new_size')";
-		mysql_query($sql);
-		?>
-		<script>
-		alert('successfully uploaded');
-        window.location.href='index.php?success';
-        </script>
-		<?php
-	}
-	else
-	{
-		?>
-		<script>
-		alert('error while uploading file');
-        window.location.href='index.php?fail';
-        </script>
-		<?php
-	}
+<?php 
+include("../../apis/config.php");
+$email = "royal@royalsoftware.com";
+$name = "Royal Admin";
+$category = "Technical";
+$uploaddate = date("Y-m-d");
+
+if (!is_dir($email)) {
+    mkdir($email);         
+}
+
+for($i=0; $i<count($_FILES['file']['name']); $i++){
+	$ext = explode('.', basename( $_FILES['file']['name'][$i]));
+
+	$target_path = $email."/".$ext[0]."_".date("h_m_s").".".$ext[1]; 
+	if(move_uploaded_file($_FILES['file']['tmp_name'][$i], $target_path)) {
+	    $query = "INSERT INTO `rsm_files` (`name`, `category`, `filename`, `path`, `email`, `uploaddate`) VALUES ('".$name."' ,'".$category."' ,'".$ext[0]."' ,'". $target_path."' ,'". $email."','". $uploaddate."')";
+	    $res = query($query);
+		if($res){		
+			echo json_encode(array('Status' => "1" ));
+			}else{
+				echo json_encode(array('Status' => mysqli_error($conn)));
+			}
+		}
+	 else{
+	    echo json_encode(array("status"=>0));
+		}
 }
 ?>
