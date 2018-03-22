@@ -11,12 +11,13 @@
 		if($_POST["layout"] == "1001"){
 			$fname = $_POST["fname"];
 			$lname = $_POST["lname"];
+			$password = $_POST["password"];
 			$email = $_POST["email"];
 			$mobile = $_POST["mobile"];
 			$password = md5($_POST["password"]);
 			$status = 1;			
 				
-		$query = "INSERT INTO `rsm_company`(`fname`, `lname`, `email`, `mobile`, `password`, `status`, `value`)VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $mobile."' ,'". $status."' , 128 )";
+		$query = "INSERT INTO `rsm_company`(`fname`, `lname`, `email`, `mobile`, `password`, `status`, `value`)VALUES ('".$fname."' ,'".$lname."' ,'".$email."' ,'". $mobile."' ,'". $password."','". $status."' , 128 )";
 			$res = query($query);
 			if($res){				
 				$query = "INSERT INTO rsm_profile(userName) VALUES ('".$email."')";
