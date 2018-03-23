@@ -1,8 +1,9 @@
 <?php 
 include("../../apis/config.php");
-$email = "royal@royalsoftware.com";
-$name = "Royal Admin";
-$category = "Technical";
+
+$email = $_POST["email"];
+$name = $_POST["name"];
+$category = $_POST["category"];
 $uploaddate = date("Y-m-d");
 
 if (!is_dir($email)) {
