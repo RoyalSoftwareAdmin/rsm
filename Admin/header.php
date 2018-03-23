@@ -106,7 +106,11 @@ session_start();
                 <i class="fa fa-file"></i> <span>Upload Docs</span>
                 </a>
               </li>	
-
+              <li class="treeview">
+                <a href="?file=addTest">
+                <i class="fa fa-book"></i> <span>Add Test</span>
+                </a>
+              </li>	
              <!--  <li class="treeview">
                 <a href="#">
                 <i class="fa fa-laptop"></i>

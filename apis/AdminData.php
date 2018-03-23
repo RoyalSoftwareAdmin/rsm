@@ -44,14 +44,42 @@
 		if($_POST["layout"] == "1003"){
 			$email = $_POST["email"]; //JSON.parse(localStorage.getItem("session")).email			
 		
-		$query = "select * from rsm_files where email ='".$email."'";
+			$query = "select * from rsm_files where email ='".$email."'";
 			$res = query($query);
 			if($res){		
-				echo json_encode($res);
-				}else{
-					echo json_encode(array('Status' => mysqli_error($conn)));
-				}
+				while($r = mysqli_fetch_assoc($res)) {
+			    $rows[] = $r;
 			}
+        	echo json_encode($rows);
+			}else{
+				echo json_encode(array('Status' => mysqli_error($conn)));
+			}
+		}
+		if($_POST["layout"] == "1004"){				
+			$query = "select * from rsm_category";			
+			$res = query($query);
+			if($res){		
+				while($r = mysqli_fetch_assoc($res)) {
+			    $rows[] = $r;
+			}
+        	echo json_encode($rows);
+			}else{
+				echo json_encode(array('Status' => mysqli_error($conn)));
+			}
+		}
+		if($_POST["layout"] == "1005"){
+			$cat_id = $_POST["cat_id"];
+			$query = "select * from rsm_div where cat_id='".$cat_id."'";
+			$res = query($query);
+			if($res){		
+				while($r = mysqli_fetch_assoc($res)) {
+			    $rows[] = $r;
+			}
+        	echo json_encode($rows);
+			}else{
+				echo json_encode(array('Status' => mysqli_error($conn)));
+			}
+		}
 	}
 
 ?>
