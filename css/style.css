@@ -314,7 +314,7 @@ ul.dropdown-menu{
     color: #383838;
     padding: 0.5em 1em;
     border: 1px solid #8c8c8c;
-    background: url(../images/search-icon.png) no-repeat 160px 12px;
+    background: url(../../images/search-icon.png) no-repeat 110px 12px;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
 }
 .sb-search-input::-webkit-input-placeholder {
@@ -1734,10 +1734,10 @@ form.search-form {
     margin: 0em 0em 1.5em 0em;
 }
 .login-page input.user {
-    background: url(../images/user.png)no-repeat 8px 16px #fff;
+    background: url(../../images/user.png)no-repeat 8px 16px #fff;
 }
 .login-page input.lock {
-    background: url(../images/lock.png)no-repeat 8px 16px #fff;
+    background: url(../../images/lock.png)no-repeat 8px 16px #fff;
 }
 .login-page label.checkbox {
     margin: 0 0 0 1.3em;
@@ -2074,14 +2074,14 @@ p.creating {
     margin: 0em 0 1.5em 0;
 }
 .signup-page input[type="email"]{
-    background: url(../images/mail.png)no-repeat 8px 16px #fff;
+    background: url(../../images/mail.png)no-repeat 8px 16px #fff;
 	background-size: 20px;
 }
 .signup-page input[type="text"] {
-    background: url(../images/user.png)no-repeat 8px 16px #fff;
+    background: url(../../images/user.png)no-repeat 8px 16px #fff;
 }
 .signup-page input[type="password"] {
-    background: url(../images/lock.png)no-repeat 8px 16px #fff;
+    background: url(../../images/lock.png)no-repeat 8px 16px #fff;
 }
 .signup-page input[type="text"]:focus ,.signup-page input[type="email"]:focus,.signup-page input[type="password"]:focus,.login-page input[type="email"]:focus,.login-page input[type="password"]:focus{
     border-color: #337ab7;
@@ -5055,7 +5055,7 @@ figure.icons,.weather-text {
 	    letter-spacing: 1px;
 }
 .weather_w3_inner_info{
-    background: url(../images/weather.jpg)no-repeat center;
+    background: url(../../images/weather.jpg)no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -5400,7 +5400,7 @@ figure.icons,.weather-text {
 
 /*-- User profile --*/
 .malorum-top {
-    background: url(../images/weather.jpg)no-repeat;
+    background: url(../../images/weather.jpg)no-repeat;
 	background-size:cover;
     min-height: 258px;
 }
@@ -5413,7 +5413,7 @@ figure.icons,.weather-text {
     box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
 }
 span.malorum-pro {
-    background: url(../images/img1.png)no-repeat;
+    background: url(../../images/img1.png)no-repeat;
     width: 100px;
     height: 100px;
     display: inline-block;
@@ -5793,7 +5793,7 @@ i.fa.fa-facebook.profile-icon {
 }
 .single-bottom ul li input[type="checkbox"]:checked+label span:first-child:before {
     content: "";
-    background: url(../images/tick.png)no-repeat;
+    background: url(../../images/tick.png)no-repeat;
     position: absolute;
     left: 1px;
     top: 2px;
@@ -6214,7 +6214,7 @@ i.icon_13{
 }
 .single-bottom ul li input[type="checkbox"]:checked+label span:first-child:before {
 	content: "";
-    background: url(../images/tick.png)no-repeat;
+    background: url(../../images/tick.png)no-repeat;
     position: absolute;
     left: 1px;
     top: 2px;
@@ -7102,7 +7102,7 @@ h4.asd label {
 	}
 	.sb-search-input {
 		width: 80%;
-		background: url(../images/search-icon.png) no-repeat 130px 12px;
+		background: url(../../images/search-icon.png) no-repeat 130px 12px;
 	}
 	.search-box {
 		width: 46%;
@@ -7170,7 +7170,7 @@ h4.asd label {
 	}
 	.sb-search-input {
 		width: 80%;
-		background: url(../images/search-icon.png) no-repeat 100px 12px;
+		background: url(../../images/search-icon.png) no-repeat 100px 12px;
 	}
 	.button_set_one.three .btn {
 		margin: 5px 2px 0;
@@ -7228,7 +7228,7 @@ h4.asd label {
 	}
 	.sb-search-input {
 		width: 80%;
-		background: url(../images/search-icon.png) no-repeat 120px 12px;
+		background: url(../../images/search-icon.png) no-repeat 120px 12px;
 	}
 	.login-page, .signup-page {
 		width: 60%;
@@ -7536,7 +7536,7 @@ h4.asd label {
 	}
 	.sb-search-input {
 		width: 90%;
-		background: url(../images/search-icon.png) no-repeat 110px 12px;
+		background: url(../../images/search-icon.png) no-repeat 110px 12px;
 	}
 	.login-page, .signup-page {
 		width: 70%;
@@ -7849,7 +7849,7 @@ h4.asd label {
 	}
 	.sb-search-input {
 		width: 90%;
-		background: url(../images/search-icon.png) no-repeat 160px 12px;
+		background: url(../../images/search-icon.png) no-repeat 160px 12px;
 	}
 	.stat {
 		width: 100%;
@@ -7905,7 +7905,7 @@ h4.asd label {
 @media(max-width:414px){
 	.sb-search-input {
 		width: 90%;
-		background: url(../images/search-icon.png) no-repeat 135px 12px;
+		background: url(../../images/search-icon.png) no-repeat 135px 12px;
 	}
 	.r3_counter_box .fa {
 		font-size: 20px;
@@ -7930,7 +7930,7 @@ h4.asd label {
 		float: none;
 	}
 	.signup-page input[type="text"] {
-		background: url(../images/user.png)no-repeat 8px 10px #fff;
+		background: url(../../images/user.png)no-repeat 8px 10px #fff;
 	}
 	.login-page h2.title1, .signup-page h2.title1 {
 		padding: .8em 1em;
@@ -7947,7 +7947,7 @@ h4.asd label {
 	}
 	.sb-search-input {
 		width: 90%;
-		background: url(../images/search-icon.png) no-repeat 130px 12px;
+		background: url(../../images/search-icon.png) no-repeat 130px 12px;
 	}
 	ul.bt-list li a {
 		width: 100%;
@@ -7956,7 +7956,7 @@ h4.asd label {
 @media(max-width:375px){
 	.sb-search-input {
 		width: 90%;
-		background: url(../images/search-icon.png) no-repeat 125px 12px;
+		background: url(../../images/search-icon.png) no-repeat 125px 12px;
 	}
 }
 @media(max-width:320px){
@@ -7971,7 +7971,7 @@ h4.asd label {
 	}
 	.sb-search-input {
 		width: 90%;
-		background: url(../images/search-icon.png) no-repeat 105px 7px;
+		background: url(../../images/search-icon.png) no-repeat 105px 7px;
 	}
 	.grid_3.grid_4 {
 		padding: 2em 1em ! important;
@@ -8369,11 +8369,11 @@ h4.asd label {
 		padding: 10px 15px 10px 37px;
 	}
 	.signup-page input[type="email"] {
-		background: url(../images/mail.png)no-repeat 8px 10px #fff;
+		background: url(../../images/mail.png)no-repeat 8px 10px #fff;
 		background-size: 20px;
 	}
 	.signup-page input[type="password"] {
-		background: url(../images/lock.png)no-repeat 8px 10px #fff;
+		background: url(../../images/lock.png)no-repeat 8px 10px #fff;
 	}
 	.forgot a {
 		font-size: 0.9em;

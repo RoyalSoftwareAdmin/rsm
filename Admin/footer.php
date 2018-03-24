@@ -4,7 +4,7 @@
 <!--//footer-->
 </div>
 		
-<script src="js/bootstrap.js"> </script>
+<script src="../js/bootstrap.js"> </script>
 <script type="text/javascript">
 	<?php
 	if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet

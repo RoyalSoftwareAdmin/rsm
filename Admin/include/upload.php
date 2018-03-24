@@ -1,6 +1,6 @@
 <?php 
 include("../../apis/config.php");
-
+echo var_dump($_POST);
 $email = $_POST["email"];
 $name = $_POST["name"];
 $category = $_POST["category"];

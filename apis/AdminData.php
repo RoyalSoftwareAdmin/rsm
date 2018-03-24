@@ -47,10 +47,7 @@
 			$query = "select * from rsm_files where email ='".$email."'";
 			$res = query($query);
 			if($res){		
-				while($r = mysqli_fetch_assoc($res)) {
-			    $rows[] = $r;
-			}
-        	echo json_encode($rows);
+				echo json_encode($res);
 			}else{
 				echo json_encode(array('Status' => mysqli_error($conn)));
 			}

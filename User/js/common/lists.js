@@ -7,12 +7,12 @@ var countryList = [
 		{"name" : "Europe", "value" : "EUR"},
 ]
 var stateList = [
-		{"name" : "karnataka", "value" : "kar"},
-		{"name" : "kerela", "value" : "ker"},
-		{"name" : "Andra", "value" : "AND"},
-		{"name" : "uttar pradesh " ,"value" : "UP"},
-		{"name" : "delhi", "value" : "DEL"},
-		{"name" : "surat", "value" : "SUR"},
+		{"name" : "Karnataka", "value" : "KA"},
+		{"name" : "Kerala", "value" : "KL"},
+		{"name" : "Andra Pradesh", "value" : "AP"},
+		{"name" : "Telengana " ,"value" : "TS"},
+		{"name" : "Tamilnadu", "value" : "TN"},
+		{"name" : "Delhi", "value" : "DL"},
 ]
 var bloodList = [
 		{"name" : "A+", "value" : "Apos"},

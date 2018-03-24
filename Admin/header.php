@@ -31,45 +31,45 @@ session_start();
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 	<!-- Bootstrap Core CSS -->
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../css/Bootstrap.css" rel='stylesheet' type='text/css' />
 
 	<!-- Custom CSS -->
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="../css/style.css" rel='stylesheet' type='text/css' />
 	
 	<!-- font-awesome icons CSS -->
-	<link href="css/font-awesome.css" rel="stylesheet"> 
+	<link href="../css/font-awesome.css" rel="stylesheet"> 
 	<!-- //font-awesome icons CSS-->
 
 	<!-- side nav css file -->
-	<link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css'/>
+	<link href='../css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css'/>
 	<!-- //side nav css file -->
 	 
 	 <!-- js-->
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/modernizr.custom.js"></script>
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/modernizr.custom.js"></script>
 
 	<!--webfonts-->
 	<link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<!--//webfonts--> 
 
 	<!-- chart -->
-	<script src="js/Chart.js"></script>
+	<script src="../js/Chart.js"></script>
 	<!-- //chart -->
 
 	<!-- Metis Menu -->
-	<script src="js/metisMenu.min.js"></script>
-	<script src="js/custom.js"></script>
-	<link href="css/custom.css" rel="stylesheet">
-	<link href="css/owl.carousel.css" rel="stylesheet">
+	<script src="../js/metisMenu.min.js"></script>
+	<script src="../js/custom.js"></script>
+	<link href="../css/custom.css" rel="stylesheet">
+	<link href="../css/owl.carousel.css" rel="stylesheet">
 	
-	<link rel="stylesheet" href="css/export.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../css/export.css" type="text/css" media="all" />
 	<script type="text/javascript" src="js/common/common.js"></script>
-	<script src="js/pie-chart.js" type="text/javascript"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/amcharts.js"></script>
-	<script src="js/serial.js"></script>
-	<script src="js/export.min.js"></script>
-	<script src="js/light.js"></script>
+	<script src="../js/pie-chart.js" type="text/javascript"></script>
+	<script src="../js/owl.carousel.js"></script>
+	<script src="../js/amcharts.js"></script>
+	<script src="../js/serial.js"></script>
+	<script src="../js/export.min.js"></script>
+	<script src="../js/light.js"></script>
 	
 	
 </head>
@@ -212,7 +212,7 @@ session_start();
 						<li class="dropdown profile_details_drop">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 								<div class="profile_img">	
-									<span class="prfil-img"><img src="images/2.jpg" alt=""> </span> 
+									<span class="prfil-img"><img src="../../images/2.jpg" alt=""> </span> 
 									<div class="user-name">
 										<p>User</p>
 										<span class="loggeduser"></span>
@@ -239,53 +239,5 @@ session_start();
  	<!-- Main details  -->
  	 <div id="page-wrapper">
         <div class="main-page">
-        	<div class="col_3">
-		        <div class="col-md-3 widget widget1">
-		            <div class="r3_counter_box">
-		               <i class="pull-left fa fa-dollar icon-rounded"></i>
-		                <div class="stats">
-		                  <h5><strong>200 Rs</strong></h5>
-		                  <span>Current Balance</span>
-		                </div>
-		            </div>
-		        </div>
-
-		       <div class="col-md-3 widget widget1">
-		            <div class="r3_counter_box">
-		                <i class="pull-left fa fa-laptop user1 icon-rounded"></i>
-		              <div class="stats">
-		                 <h5><strong>Ready</strong></h5>
-		                  <span>Take Test</span>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-3 widget widget1">
-		            <div class="r3_counter_box">
-		                <i class="pull-left fa fa-money user2 icon-rounded"></i>
-		                <div class="stats">
-		                  <h5><strong>Recharge</strong></h5>
-		                  <span>Account</span>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-3 widget widget1">
-		            <div class="r3_counter_box">
-		                <i class="pull-left fa fa-pie-chart dollar1 icon-rounded"></i>
-		                <div class="stats">
-		                  <h5><strong>Report</strong></h5>
-		                  <span>Test Result</span>
-		                </div>
-		            </div>
-		         </div>
-		        <div class="col-md-3 widget">
-		            <div class="r3_counter_box">
-		                <i class="pull-left fa fa-users dollar2 icon-rounded"></i>
-		                <div class="stats">
-		                  <h5><strong>Remark</strong></h5>
-		                  <span>Your Skills</span>
-		                </div>
-		            </div>
-		         </div>
-		        <div class="clearfix"> </div>
-		    </div>
+        	
                 

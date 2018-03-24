@@ -28,7 +28,7 @@
       <?php  } ?>    
                
     
-    <script  src="js/index1.js"></script>   
+    <script  src="../js/index1.js"></script>   
         <div class="charts">        
             <div class="mid-content-top charts-grids">
                 <div class="middle-content">
@@ -36,49 +36,49 @@
                     <!-- start content_slider -->
                     <div id="owl-demo" class="owl-carousel text-center">
                         <div class="item">
-                            <img class="lazyOwl img-responsive image" data-src="images/slider1.jpg" alt="name">
+                            <img class="lazyOwl img-responsive image" data-src="../images/slider1.jpg" alt="name">
                             <div class="middle">
                                 <div class="text">Technical Skills</div>
                                 <div class="text"><a href="#">Take Test</a></div>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="lazyOwl img-responsive image" data-src="images/slider2.jpg" alt="name">
+                            <img class="lazyOwl img-responsive image" data-src="../images/slider2.jpg" alt="name">
                             <div class="middle">
                                 <div class="text">Analytical Skills</div>
                                 <div class="text"><a href="#">Take Test</a></div>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="lazyOwl img-responsive image" data-src="images/slider3.jpg" alt="name">
+                            <img class="lazyOwl img-responsive image" data-src="../images/slider3.jpg" alt="name">
                             <div class="middle">
                                 <div class="text">Logical Skills</div>
                                 <div class="text"><a href="#">Take Test</a></div>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="lazyOwl img-responsive image" data-src="images/slider4.jpg" alt="name">
+                            <img class="lazyOwl img-responsive image" data-src="../images/slider4.jpg" alt="name">
                             <div class="middle">
                                 <div class="text">Verbal Skills</div>
                                 <div class="text"><a href="#">Take Test</a></div>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="lazyOwl img-responsive image" data-src="images/slider5.jpg" alt="name">
+                            <img class="lazyOwl img-responsive image" data-src="../images/slider5.jpg" alt="name">
                             <div class="middle">
                                 <div class="text">Puzzles</div>
                                 <div class="text"><a href="#">Take Test</a></div>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="lazyOwl img-responsive image" data-src="images/slider6.jpg" alt="name">
+                            <img class="lazyOwl img-responsive image" data-src="../images/slider6.jpg" alt="name">
                             <div class="middle">
                                 <div class="text">All in One</div>
                                 <div class="text"><a href="#">Take Test</a></div>
                             </div>
                         </div>
                         <div class="item">
-                            <img class="lazyOwl img-responsive image" data-src="images/slider7.jpg" alt="name">
+                            <img class="lazyOwl img-responsive image" data-src="../images/slider7.jpg" alt="name">
                             <div class="middle">
                                 <div class="text">Interview Special</div>
                                 <div class="text"><a href="#">Take Test</a></div>
@@ -99,9 +99,9 @@
        
    <!-- new added graphs chart js-->
    
-   <script src="js/Chart.bundle.js"></script>
-    <script src="js/utils.js"></script>
-        <script src="js/classie.js"></script>
+   <script src="../js/Chart.bundle.js"></script>
+    <script src="../js/utils.js"></script>
+        <script src="../js/classie.js"></script>
         <script>
             var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
                 showLeftPush = document.getElementById( 'showLeftPush' ),
@@ -124,19 +124,19 @@
     <!-- //Classie --><!-- //for toggle left push menu script -->
         
     <!--scrolling js-->
-    <script src="js/jquery.nicescroll.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="../js/jquery.nicescroll.js"></script>
+    <script src="../js/scripts.js"></script>
     <!--//scrolling js-->
     
     <!-- side nav js -->
-    <script src='js/SidebarNav.min.js' type='text/javascript'></script>
+    <script src='../js/SidebarNav.min.js' type='text/javascript'></script>
     <script>
       $('.sidebar-menu').SidebarNav()
     </script>
     <!-- //side nav js -->
     
     <!-- for index page weekly sales java script -->
-    <script src="js/SimpleChart.js"></script>
+    <script src="../js/SimpleChart.js"></script>
     <script>
         var graphdata1 = {
             linecolor: "#CCA300",
