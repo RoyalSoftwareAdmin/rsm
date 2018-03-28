@@ -1,0 +1,49 @@
+/*.middle.text{
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
+.middle:hover .text {
+visibility:visible;
+}*/
+.item {
+  position: relative;
+  width: 100%;
+}
+.lazyOwl{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.middle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.item:hover .middle {
+  height: 100%;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text1 a{
+	    color: black;
+}
+.text1:hover a{
+	    color: white;
+}

@@ -26,7 +26,7 @@
       <div class="row"> 
        
        <div class="col-md-4">
-       <a href=""> <button class="comm">Bussiness Analyst</button></a>
+       <a href=""> <button class="comm">Business Analyst</button></a>
        </div>
        
         <div class="col-md-4">
