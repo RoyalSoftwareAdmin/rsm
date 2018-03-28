@@ -60,64 +60,44 @@ $(document).ready(function(){
 
 
 	$("#personal").on("click", function(){
-		$(".error").html("");
-			zip = $("#zip").val();
-			dob = $("#dob").val();
-			country = $("#countryList :selected").val();
-			state = $("#stateList :selected").val();
-		    userstatus = 1;
-			flag = true;
-			if(zip === "" || !regex(zip)){
-				error= "Enter correct 6 digit number Eg:500001";
-				flag = false;
-			}
-			
-			if(!flag){
-				$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
-			}	
+		$("ul li").each(function(k){ $(this).removeClass("active") })
+		$(".tab2").click();
+		$(".tab2").parent().addClass("active");
 	})
 	$("#education").on("click", function(){
-		error = "";
-		organization = $("#organization").val();
-		department = $("#department").val();
-		blood = $("#bloodList :selected").val();
-		$(".error").html("");
-			id = $("#ids").val();
-			flag = true;
-			 if(id === "" || !uid(id)){
-				error= "Id should be alphanumeric ";
-				flag = false;
-			}
-			
-		if(!flag){
-			$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
-		}
+		$("ul li").each(function(k){ $(this).removeClass("active") })
+		$(".tab3").click();
+		$(".tab3").parent().addClass("active");
 	})    
-/* MOBILE N EMAIL VALIDATION */
-
-	$("#contact").on("click", function(){
-		error = "";
-		$(".error").html("");
-	  	mobile = $("#mobile").val();
-	  	office = $("#office").val();
-	  	webbsite = $("#website").val();
-		flag = true;
-	    if(mobile === "" || !isnum(mobile)){
-			error= "Enter correct 10 digit number Eg:9123456789";
-			flag = false;
-		}
-		if(!flag){
-			$(".error").html(error).css({"color":"#FF0000" , "font-weight":"bold" , "text-align": "center" , "margin": "px 0px"});
-		}
-	})
 
 	$("#technical").on("click", function(){
-		technical = $(".technicalData").val();
+		$("ul li").each(function(k){ $(this).removeClass("active") })
+		$(".tab4").click();
+		$(".tab4").parent().addClass("active");
 	})
+
+	$("#contact").on("click", function(){
+		$("ul li").each(function(k){ $(this).removeClass("active") })
+		$(".tab5").click();
+		$(".tab5").parent().addClass("active");
+	})
+ 
 
 	 
 
     $("#submit").on("click", function(){
+    	zip = $("#zip").val();
+		dob = $("#dob").val();
+		country = $("#countryList :selected").val();
+		state = $("#stateList :selected").val();
+		organization = $("#organization").val();
+		id = $("#ids").val();
+		department = $("#department").val();
+		blood = $("#bloodList :selected").val();
+		mobile = $("#mobile").val();
+	  	office = $("#office").val();
+	  	webbsite = $("#website").val();
+	  	technical = $(".technicalData").val();
     	others = $(".otherDetails").val();
     	$.ajax({
     		url	: "../apis/GenricData.php",
