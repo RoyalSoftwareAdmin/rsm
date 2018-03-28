@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="css/modules/sty.css">
-
 <?php 
 	include_once("header.php");
 ?>

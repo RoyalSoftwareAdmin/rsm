@@ -68,7 +68,7 @@ h1 {
 .profile .tabs-menu {
 	width: 60%;
 	float: left;
-	background: url("../../images/model.jpg") no-repeat 0px 0px;
+	background: url("../../../images/model.jpg") no-repeat 0px 0px;
 	background-size: cover;
 }	
 .profile .tabs-menu ul {
