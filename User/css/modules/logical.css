@@ -6,55 +6,79 @@
 .diagram{
 	    color: #0099c1;
 	    width: 100%;
-	    padding: 25px 10px;
-	    margin: 15px;
+		padding: 20px;
+		margin: 10px;
 	    border: 5px solid #f1f1f1;
 	    border-radius: 24px;
 	    font-size: 22px;
 	    text-align: center;
 	    background: transparent;
 }
+a .diagram:hover{
+	         background-color: #337ab7;
+			 color: white;
+}
+
 .verbal{
 	    color: #0099c1;
 	    width: 100%;
-	    padding: 25px 10px;
-	    margin: 15px;
+	 	padding: 20px;
+		margin: 10px;
 	    border: 5px solid #f1f1f1;
 	    border-radius: 24px;
 	    font-size: 22px;
 	    text-align: center;
 	    background: transparent;
 }
+a .verbal:hover{
+	         background-color: #337ab7;
+			 color: white;
+}
+
 .non-verbal{
 	    color: #0099c1;
 	    width: 100%;
-	    padding: 25px 10px;
-	    margin: 15px;
+	    padding: 20px;
+		margin: 10px;
 	    border: 5px solid #f1f1f1;
 	    border-radius: 24px;
 	    font-size: 22px;
 	    text-align: center;
 	    background: transparent;
 }
+a .non-verbal:hover{
+	         background-color: #337ab7;
+			 color: white;
+}
+
 .numeric{
 	    color: #0099c1;
 	    width: 100%;
-	    padding: 25px 10px;
-	    margin: 15px;
+	   	padding: 20px;
+		margin: 10px;
 	    border: 5px solid #f1f1f1;
 	    border-radius: 24px;
 	    font-size: 22px;
 	    text-align: center;
 	    background: transparent;
 }
+a .numeric:hover{
+	         background-color: #337ab7;
+			 color: white;
+}
+
 .situation{
         color: #0099c1;
 	    width: 100%;
-	    padding: 25px 10px;
-	    margin: 15px;
+	    padding: 20px;
+		margin: 10px;
 	    border: 5px solid #f1f1f1;
 	    border-radius: 24px;
 	    font-size: 22px;
 	    text-align: center;
 	    background: transparent;
+}
+a .situation:hover{
+	         background-color: #337ab7;
+			 color: white;
 }

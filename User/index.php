@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/modules/sty.css">
+
 <?php 
 	include_once("header.php");
 ?>
@@ -38,50 +40,50 @@
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider1.jpg" alt="name">
                             <div class="middle">
-                                <div class="text">Technical Skills</div>
-                                <div class="text"><a href="#">Take Test</a></div>
+                                <div class="text"><p>Technical Skills</p>
+                                <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider2.jpg" alt="name">
                             <div class="middle">
-                                <div class="text">Analytical Skills</div>
-                                <div class="text"><a href="#">Take Test</a></div>
+                                <div class="text"><p>Analytical Skills</p>
+                                <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider3.jpg" alt="name">
                             <div class="middle">
-                                <div class="text">Logical Skills</div>
-                                <div class="text"><a href="#">Take Test</a></div>
+                                <div class="text"><p>Logical Skills</p>
+                                <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider4.jpg" alt="name">
                             <div class="middle">
-                                <div class="text">Verbal Skills</div>
-                                <div class="text"><a href="#">Take Test</a></div>
+                                <div class="text"><p>Verbal Skills</p>
+                                <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider5.jpg" alt="name">
                             <div class="middle">
-                                <div class="text">Puzzles</div>
-                                <div class="text"><a href="#">Take Test</a></div>
+                                <div class="text"><p>Puzzles</p>
+                                <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider6.jpg" alt="name">
                             <div class="middle">
-                                <div class="text">All in One</div>
-                                <div class="text"><a href="#">Take Test</a></div>
+                                <div class="text"><p>All in One</p>
+                                <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider7.jpg" alt="name">
                             <div class="middle">
-                                <div class="text">Interview Special</div>
-                                <div class="text"><a href="#">Take Test</a></div>
+                                <div class="text"><p>Interview Special</p>
+                                <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
                         

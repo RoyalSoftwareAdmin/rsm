@@ -19,7 +19,7 @@
        </div>
        
        <div class="col-md-4">
-        <a href=""><button class="comm">Bussiness</button></a>
+        <a href=""><button class="comm">Business</button></a>
        </div>
        </div>
        
