@@ -39,7 +39,7 @@
 							      	<p>Zip</p>
 							      	<input type="text" class="pass zipp" id="zip" maxlength="6"class="pn" />
 									<div class="error"></div>
-									<a href="#tab2" class="button outline-inward submit" id="personal">NEXT</a>
+									<a class="button outline-inward submit" id="personal">NEXT</a>
 							 	</form>
 							</div>
 						</div>
@@ -55,7 +55,7 @@
 							      	<p>ID</p>
 							      	<input type="text" class="pass usnn" id="ids"  />
 									<div class="error"></div>
-									<a href="#tab3" class="button outline-inward" id="education">NEXT</a>
+									<a class="button outline-inward" id="education">NEXT</a>
 							 	</form>
 								
 							</div>
@@ -64,7 +64,7 @@
 							<div class="signin pp">
 						     	<form class="profile">
 								<textarea rows="11" class="comment technicalData"></textarea>
-						     		<a href="#tab4" id="technical" class="button outline-inward submit">NEXT</a>
+						     		<a id="technical" class="button outline-inward submit">NEXT</a>
 							 	</form>
 							</div>
 						</div>
@@ -78,7 +78,7 @@
 							       	<p>Website</p>
 							      	<input type="text" id="website" class="pass web"  />
 									<div class="error"></div>
-									<a href="#tab5" class="button outline-inward submit" id="contact">NEXT</a>
+									<a class="button outline-inward submit" id="contact">NEXT</a>
 							 	</form>
 							</div>
 						</div>
@@ -91,7 +91,7 @@
 							      	<p class="tet">Other Details
 							      		<textarea  rows="7" col="5" id="others" class="comment otherDetails"> </textarea>
 							      	</p>					 
-									<a href="#tab1" id="submit" class="button outline-inward in submit">SUBMIT</a>
+									<a  id="submit" class="button outline-inward in submit">SUBMIT</a>
 							 	</form>
 							</div>
 						</div>
