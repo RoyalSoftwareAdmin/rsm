@@ -1,0 +1,18 @@
+.sub_home input[type="button"] {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background: #f2b33f;
+    width: 45%;
+    padding: .6em 1em;
+    font-size: 1em;
+    margin: 0.5em auto 0em;
+    display: block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}

@@ -35,7 +35,7 @@
 							<div class="clearfix"> </div>
 						<div class="sub_home">
 								<input type="button" id="submit" value="Submit">
-							<div class="clearfix"> </div>
+							<div class="clearfix"></div>
 						</div>
 						<div class="registration">
 							Already Registered.
