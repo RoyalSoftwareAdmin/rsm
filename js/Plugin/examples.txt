@@ -1,0 +1,7 @@
+// Plugin for creating table, #usefullink is the ID where we bind the table , result id the API response , datatables required is to enable datatable for the table, clickColumn where some action needs to be done for respective row 
+
+$("#usefullinks").Plugin_Table({
+         resultData: result,
+         datatablerequired: true,
+          ClickColumns: "4"
+})

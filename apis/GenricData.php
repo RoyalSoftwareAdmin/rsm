@@ -136,6 +136,30 @@
 				echo json_encode(array('Status' => "Invalid UserName and Password"));
 			}
 		}
+		// Useful link screen api starts here
+		if($_POST['layout'] === "1005"){ 
+			$sql = "select f.name as Author , c.cat_name as Category, f.filename as File_Name , f.email as Email from rsm_files f , rsm_category c where c.cat_id= f.category";
+			$res = query($sql);
+			if($res->num_rows  >= 1) {
+				$val = 0;
+				$row = array('Name' => [], 'Category' => [], 'File_Name' => [], 'Email' => [], 'Download' =>[] );
+				while($r = $res -> fetch_assoc()) {
+				    $row['Name'][$val] = $r['Author'];
+				    $row['Category'][$val] = $r['Category'];
+				    $row['File_Name'][$val] = $r['File_Name'];
+				    $row['Email'][$val] = $r['Email'];
+				    $row['Download'][$val] = 'Download';
+				    $val++;
+				}
+	        	$result_array =  array("tableHeader" => [["heading"=>"Author"] ,["heading"=>"Category"], ["heading" => "File_Name" ], ["heading" => "Email"] , ["heading" => "Download"]],"tableData" => [$row]);
+				
+		  	 	echo json_encode($result_array);
+	        }
+	        else {
+	      		 echo json_encode(array('Status' => 'Failure'));
+	   		} 
+			exit();
+	}
 
 	}
 

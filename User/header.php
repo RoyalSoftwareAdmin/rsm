@@ -32,6 +32,7 @@ session_start();
 
 	<!-- Bootstrap Core CSS -->
 	<link href="../css/Bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="../css/dataTables.bootstrap.css" rel='stylesheet' type='text/css' />
 
 	<!-- Custom CSS -->
 	<link href="../css/style.css" rel='stylesheet' type='text/css' />
@@ -46,8 +47,7 @@ session_start();
 	 
 	 <!-- js-->
 	<script src="../js/jquery-1.11.1.min.js"></script>
-	<script src="../js/modernizr.custom.js"></script>
-
+	<script src="../js/modernizr.custom.js"></script>	
 	<!--webfonts-->
 	<link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<!--//webfonts--> 
@@ -70,7 +70,8 @@ session_start();
 	<script src="../js/serial.js"></script>
 	<script src="../js/export.min.js"></script>
 	<script src="../js/light.js"></script>
-	
+	<script src="../js/jquery.dataTables.js"></script>
+	<script src="../js/dataTables.bootstrap.js"></script>
 	
 </head>
 <body class="cbp-spmenu-push">
