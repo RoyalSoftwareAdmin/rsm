@@ -8,7 +8,7 @@ License URL: http://www.royalsoftwaresolution.com/docs/licence.pdf
 
 */
 /*-- Reset Code --*/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form.profile,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body,div,span,applet,object,iframe,.profile h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form.profile,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
@@ -49,9 +49,8 @@ body {
     background-color: #F8F8FF;
 }
 
-h1 {
+.profile h1 {
     text-align: center;
-    margin: 50px 0 0 0 ;
     font-family: Oswald-Light;
     font-weight: bold;
     font-size: 35px;
@@ -59,7 +58,6 @@ h1 {
 
 .container.profile {
 	width: 80%;
-	margin: 30px auto;
 }
 .clear{
 	clear:both;
@@ -244,8 +242,7 @@ input.pass {
 /*--- Responsinator Code ---*/
 
 @media screen and (max-width: 1920px) {
-    h1 {
-        margin: 100px 0 0 0;
+    .profile h1 {
         font-size: 40px;
     }
     .container.profile {
@@ -255,8 +252,7 @@ input.pass {
 }
 
 @media screen and (max-width:1680px) {
-    h1 {
-        margin: 80px 0 0 0;
+    .profile h1 {
         font-size: 40px;
     }
     .container.profile {
@@ -265,8 +261,7 @@ input.pass {
 }
 
 @media screen and (max-width:1366px) {
-    h1 {
-        margin: 30px 0 0 0;
+    .profile h1 {
         font-size: 35px;
     }
     .container.profile {
@@ -279,16 +274,12 @@ input.pass {
 }
 
 @media screen and (max-width:1280px) {
-    h1 {
-        margin: 50px 0 0 0;
+    .profile h1 {
         font-size: 35px;
     }   
 }
 
 @media screen and (max-width:1024px) {
-    h1 {
-        margin: 30px 0 0 0;
-    }
     .container.profile {
         width: 100%;
     }
@@ -373,9 +364,6 @@ input.pass {
 }
 
 @media screen and (max-width:768px) {
-    h1 {
-        margin: 60px 0 0 0;
-    }
     .container.profile {
         width: 100%;
     }
@@ -427,18 +415,12 @@ input.pass {
 }
 
 @media screen and (max-width:736px) {
-    h1 {
-        margin: 40px 0 0 0;
-    }
     .container.profile {
         width: 100%;
     }
 }
 
 @media screen and (max-width:667px) {
-    h1 {
-        margin: 40px 0 0 0;
-    }
     .container.profile {
         width: 95%;
     }   
@@ -488,10 +470,6 @@ input.pass {
 }
 
 @media screen and (max-width:603px) {
-    h1 {
-        margin: 40px 0;
-        font-size: 30px;
-    }
     .container.profile {
         width: 100%;
     }
@@ -526,7 +504,7 @@ input.pass {
 }
 
 @media screen and (max-width:568px) {
-    h1 {
+    .profile h1 {
         font-size: 30px;
     }
     .container.profile {
@@ -633,10 +611,9 @@ form.profile {
 }
 
 @media screen and (max-width:320px) {
-    h1 {
-    font-size: 27px;
-    margin: 40px 0;
-}
+    .profile h1 {
+        font-size: 27px;        
+    }
 
 .container.profile {
     width: 100%;
@@ -657,9 +634,8 @@ form.profile {
 }
 
 @media screen and (max-width:240px) {
-    h1 {
+    .profile h1 {
         font-size: 20px;
-        margin: 30px 0;
     }
     .profile .tabs-menu ul li a {
         padding: 9px 5px;
