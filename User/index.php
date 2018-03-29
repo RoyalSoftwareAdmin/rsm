@@ -59,14 +59,14 @@
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider4.jpg" alt="name">
                             <div class="middle">
-                                <div class="text"><p>Verbal Skills</p>
+                                <div class="text"><p>Aptitude</p>
                                 <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
                         <div class="item">
                             <img class="lazyOwl img-responsive image" data-src="../images/slider5.jpg" alt="name">
                             <div class="middle">
-                                <div class="text"><p>Puzzles</p>
+                                <div class="text"><p>Current Affairs</p>
                                 <p class="text1"><a href="#">Take Test</a></p></div>
                             </div>
                         </div>
