@@ -105,7 +105,7 @@ $(document).ready(function(){
     		method:"POST",
     		data : { "layout" : "1003" , "userName":email , "dob":dob , "country":country , "state": state , "zip":zip , "organization":organization , "department":department ,"id": id, "blood":blood ,"technical":technical , "mobile":mobile , "office":office , "webbsite":webbsite , "others" :others},
     		success: function(result){
-				console.log(resullt);	
+				console.log(result);	
     		},
     		error: function(error){
 
