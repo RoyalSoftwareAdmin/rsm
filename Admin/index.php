@@ -16,17 +16,14 @@
              <div class="row-one widgettable">
                 <div class="col-md-12 content-top-2 card">
                     <div class="agileinfo-cdr">
-                        <div class="card-header">
-                            <!--<h3>Over All Result</h3>-->
+                        <div class="card-header">                            
                             <div  class="table" id="users"></div>
-
-                        </div>
-                            <div id="Linegraph" style="width: 98%; height: 350px">                       
-                            </div>
+                        </div>                            
                     </div>
                 </div>      
                 <div class="clearfix"> </div>
             </div>  
+            <script type="text/javascript" src="js/modules/index.js"></script>
       <?php  } ?>    
                
     
@@ -71,8 +68,7 @@
     <script>
       //$('.sidebar-menu').SidebarNav()
     </script>
-    <script src="../js/SimpleChart.js"></script>
-    <script type="text/javascript" src="js/modules/index.js"></script>
+    <script src="../js/SimpleChart.js"></script>    
     <script src="../js/plugin/Plugin_Table.js"></script>
     <script type="text/javascript">       
         $(document).ready(function() {

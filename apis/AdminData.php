@@ -84,7 +84,7 @@
 				$val = 0;
 				$row = array( 'Sl No.' => [], 'Name' => [], 'Email' => [], 'AddedBy' => [] );
 				while($r = $res -> fetch_assoc()) {
-				    $row['Sl No.'] = $val+1;
+				    $row['Sl No.'][$val] = (string)($val+1);
 				    $row['Name'][$val] = $r['Name'];
 				    $row['Email'][$val] = $r['Email'];
 				    $row['AddedBy'][$val] = $r['AddedBy'];

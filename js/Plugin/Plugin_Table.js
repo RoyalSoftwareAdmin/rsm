@@ -111,9 +111,9 @@ $.fn.Plugin_Table = function (params) {
             });
         }
 
-        $('.spanval').filter(function () {
-            return this.innerHTML.match(/^[0-9\s\.,]+$/);
-        }).parent().css('float', 'right');
+        // $('.spanval').filter(function () {
+        //     return this.innerHTML.match(/^[0-9\s\.,]+$/);
+        // }).parent().css('float', 'right');
 
         if (options.withvalue == true && options.getclass == "Alarmlog") {
             $('.' + options.getclass).filter(function () {

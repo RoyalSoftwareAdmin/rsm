@@ -8,11 +8,11 @@
 					<div class="sign-up-row widget-shadow">
 						<h5>Personal Information :</h5>
 						<div class="sign-u">
-									<input type="text" name="firstname" id="name" placeholder="First Name" >
+							<input type="text" name="firstname" id="name" placeholder="First Name" >
 							<div class="clearfix"> </div>
 						</div>
 						<div class="sign-u">
-									<input type="text" id="lname" placeholder="Last Name" >
+							<input type="text" id="lname" placeholder="Last Name" >
 							<div class="clearfix"> </div>
 						</div>
 						<div class="sign-u">
@@ -20,16 +20,16 @@
 							<div class="clearfix"> </div>
 						</div>
 						<div class="sign-u">
-									<input type="text" id="mobile" placeholder="Mobile Number">
+							<input type="text" id="mobile" placeholder="Mobile Number">
 							<div class="clearfix"> </div>
 						</div>
 						<h6>Login Information :</h6>
 						<div class="sign-u">
-									<input type="password" id="password" placeholder="Password" >
+							<input type="password" id="password" placeholder="Password" >
 							<div class="clearfix"> </div>
 						</div>
 						<div class="sign-u">
-									<input type="password" id="repassword" placeholder="Confirm Password" >
+							<input type="password" id="repassword" placeholder="Confirm Password" >
 						</div>
 						<div class="sign-u error"></div>
 							<div class="clearfix"> </div>

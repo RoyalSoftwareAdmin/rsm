@@ -32,7 +32,7 @@ session_start();
 
 	<!-- Bootstrap Core CSS -->
 	<link href="../css/Bootstrap.css" rel='stylesheet' type='text/css' />
-
+	<link href="../css/dataTables.bootstrap.css" rel='stylesheet' type='text/css' />
 	<!-- Custom CSS -->
 	<link href="../css/style.css" rel='stylesheet' type='text/css' />
 	
@@ -70,6 +70,8 @@ session_start();
 	<script src="../js/serial.js"></script>
 	<script src="../js/export.min.js"></script>
 	<script src="../js/light.js"></script>
+	<script src="../js/jquery.dataTables.js"></script>
+	<script src="../js/dataTables.bootstrap.js"></script>
 	
 	
 </head>
