@@ -26,3 +26,20 @@ $(document).ready(function(){
     })
 })
 
+
+$(function(){
+	var button = $('#answerss');
+	button.attr('disabled','disabled');
+	$('#idcheck').change(function(e){
+		if(this.checked){
+			button.removeAttr('disabled');
+		}
+		else{
+			button.attr('disabled','disabled');
+		}
+			
+	});
+});
+
+
+
