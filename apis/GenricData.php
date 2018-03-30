@@ -159,7 +159,7 @@
 	      		 echo json_encode(array('Status' => 'Failure'));
 	   		} 
 			exit();
-	}
+		}		
 
 	}
 

@@ -70,6 +70,7 @@
       //$('.sidebar-menu').SidebarNav()
     </script>
     <script src="../js/SimpleChart.js"></script>
+    <script type="text/javascript" src="js/modules/index.js"></script>
     <script type="text/javascript">       
         $(document).ready(function() {
             $("#owl-demo").owlCarousel({

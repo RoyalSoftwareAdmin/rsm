@@ -77,6 +77,28 @@
 				echo json_encode(array('Status' => mysqli_error($conn)));
 			}
 		}
+		if($_POST['layout'] === "1006"){ 
+			$sql = "select CONCAT_WS(' ', fname, lname) as Name , email as Email, value as AddedBy from rsm_user";
+			$res = query($sql);
+			if($res->num_rows  >= 1) {
+				$val = 0;
+				$row = array( 'Sl No.' => [], 'Name' => [], 'Email' => [], 'AddedBy' => [] );
+				while($r = $res -> fetch_assoc()) {
+				    $row['Sl No.'] = $val+1;
+				    $row['Name'][$val] = $r['Name'];
+				    $row['Email'][$val] = $r['Email'];
+				    $row['AddedBy'][$val] = $r['AddedBy'];
+					$val++;
+				}
+	        	$result_array =  array("tableHeader" => [["heading"=>"Sl No."] ,["heading"=>"Name"], ["heading" => "Email" ], ["heading" => "AddedBy"]],"tableData" => [$row]);
+				
+		  	 	echo json_encode($result_array);
+	        }
+	        else {
+	      		 echo json_encode(array('Status' => 'Failure'));
+	   		} 
+			exit();
+		}
 	}
 
 ?>
