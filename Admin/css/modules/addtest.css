@@ -1,92 +1,35 @@
-.container{
-	       width: 100%;
-		   padding: 10px;
-		 }
-		 	.sign-u {
+.row label{
+	font-weight: 500;
+}
+.textareaDiv textarea{
+	width: 65%;
+	height: 150px;
+}
+.textareaDiv label , .answer label{
+	display: block;
+    float: left;
+    margin: 70px 25px 0px 0px;
+}
+.btns{
+	margin: 10px;
+    width: 100px;    
+    border-radius: 10px;
+    font-size: 20px;
+}
+.btnsParent{
+	margin : 0% 30%;	
+}
+.default-margin{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+input , select{
 	padding: 5px;
+    border-radius: 5px;
 }
-.choice1 label{
-	  width: 100%;
-	  margin-left: 26px;
-	  padding: 10px;	  
+input[type="radio"], input[type="checkbox"]{
+	margin: 0px 10px 0px 10px;
+    width: 20px;
+    height: 20px;
+    line-height: normal;
 }
-#choice1{
-	      padding: 5px;
-		  margin: 5px;
-}
-.choice2 label{
-	  width: 100%;
-	  margin-left: 26px;
-	  padding: 10px;	  
-}
-#choice2{
-	      padding: 5px;
-		  margin: 5px;
-}
-.choice3 label{
-	  width: 100%;
-	  margin-left: 26px;
-	  padding: 10px;	  
-}
-#choice3{
-	      padding: 5px;
-		  margin: 5px;
-}
-.choice4 label{
-	  width: 100%;
-	  margin-left: 26px;
-	  padding: 10px;	  
-}
-#choice4{
-	      padding: 5px;
-		  margin: 5px;
-}
-.correct {
-	  width: 100%;
-	  margin-left: 26px;
-	  padding: 10px;	  
-}
-.correct1 {
-	  width: 100%;
-	  margin: auto;
-	  padding: 10px;	  
-}
-.written{
-	  width: 100%;
-	  margin-left: 26px;
-	  padding: 10px;	  
-}
-.answerss{
-	  width: 100%;
-	  margin-left: 26px;
-	  padding: 10px;	  
-}
-.btnn{
-	  padding: 10px;
-	  width: 100px;
-	  margin-left: 82%;
-	  border-radius: 30px;
-	  background: transparent;
-	  color: grey;
-	  font-size: 20px;
-	  border: none;
-	  border: 1px solid #ccc;
-}
-.btnn1{
-	  padding: 10px;
-	  width: 100px;
-	  margin-right: 30%;
-	  border-radius: 30px;
-	  background: transparent;
-	  color: grey;
-	  font-size: 20px;
-	  border: none;
-	  border: 1px solid #ccc;
-}
-.error label{
-	  width: 100%;
-	  text-align: center;
-	  padding: 10px;	  
-}
-
-

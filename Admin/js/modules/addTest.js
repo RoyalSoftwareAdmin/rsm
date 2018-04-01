@@ -33,14 +33,19 @@ $(document).ready(function(){
             console.log(error);
         }
     });
-    $("#selectCategory").on("change", function(){
-        var cat_id = $("#selectCategory :selected").val();
+    $("#SelectCategory").change(function(){
+        var cat_id = $("#SelectCategory :selected").val();
         $.ajax({
             url: '../apis/AdminData.php',
             type: 'POST',
             data : {"layout" : "1005", "cat_id" : cat_id},
-            success: function (data) {
-               console.log(data);
+            success: function (result) {
+                result = JSON.parse(result);
+               var divisionoptions = '';
+                   result.forEach(function(k) {
+                        divisionoptions += '<option value='+k.div_id+'>'+k.div_name+'</option>';
+                   })
+                   $("#SelectDivision").html(divisionoptions);
             },
             error : function(error){
                 console.log(error);
